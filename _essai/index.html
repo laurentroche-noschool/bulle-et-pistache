@@ -1,0 +1,1319 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Bulle &amp; Pistache — les plus beaux contes du monde, chantés en français pour les 2 à 5 ans. Un pays par épisode, une chanson à reprendre en chœur.">
+<meta property="og:title" content="Bulle &amp; Pistache">
+<meta property="og:description" content="Une histoire, un pays, chaque semaine. Les contes du monde pour les 2 à 5 ans.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bulleetpistache.fr/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://bulleetpistache.fr/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#6b4aa0">
+<title>Bulle &amp; Pistache : contes du monde en chanson pour les 2 à 5 ans</title>
+<link rel="canonical" href="https://bulleetpistache.fr/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  /* Le squelette que l'Artifact ajoute automatiquement : ici il faut l'écrire. */
+  :root{color-scheme:light;
+    padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  body{margin:0;font:14px system-ui,-apple-system,sans-serif;background:#faf8f4}
+  img{max-width:100%} [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<style>
+/* Carnet de voyage : chaque conte est une étape, tamponnée du pays visité. */
+:root {
+  --papier:#f6ecd9; --papier2:#fdf7ea; --encre:#2b2440; --encre-doux:#5c5170;
+  --prune:#6b4aa0; --prune-clair:#8d6cc4; --corail:#d67f6e; --or:#f4a935;
+  --vert:#5cc27a; --ciel:#8bb4cf; --ligne:#d9c9ab;
+  --f-titre:'Fredoka',-apple-system,'Segoe UI',sans-serif;
+  --f-texte:'Lora',Georgia,'Times New Roman',serif;
+  --ombre:0 2px 4px rgba(43,36,64,.06), 0 12px 28px rgba(43,36,64,.10);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --papier:#1d1830; --papier2:#262040; --encre:#f3ecdd; --encre-doux:#b6abc9;
+  --prune:#b492ea; --prune-clair:#caaeff; --corail:#e89b8a; --or:#f7c05f;
+  --vert:#7ad796; --ciel:#a3c9e2; --ligne:#3d3459;
+  --ombre:0 2px 4px rgba(0,0,0,.3), 0 14px 32px rgba(0,0,0,.42); color-scheme:dark;
+} }
+:root[data-theme="dark"] {
+  --papier:#1d1830; --papier2:#262040; --encre:#f3ecdd; --encre-doux:#b6abc9;
+  --prune:#b492ea; --prune-clair:#caaeff; --corail:#e89b8a; --or:#f7c05f;
+  --vert:#7ad796; --ciel:#a3c9e2; --ligne:#3d3459;
+  --ombre:0 2px 4px rgba(0,0,0,.3), 0 14px 32px rgba(0,0,0,.42); color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papier);color:var(--encre);
+  font-family:var(--f-texte);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.enveloppe{max-width:1100px;margin:0 auto;padding-inline:20px}
+h1,h2,h3,.ui{font-family:var(--f-titre);text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px;border-radius:6px}
+
+/* ── bandeau ── */
+header.bandeau{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;
+  background:color-mix(in srgb,var(--papier) 90%,transparent);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--ligne)}
+.bandeau .enveloppe{display:flex;align-items:center;gap:16px;padding-block:12px;flex-wrap:wrap}
+.marque{font-family:var(--f-titre);font-weight:700;font-size:19px;color:var(--prune);
+  letter-spacing:.2px;margin-right:auto;display:flex;align-items:center;gap:9px}
+.marque .pastille{width:26px;height:26px;border-radius:50%;background:var(--or);
+  display:grid;place-items:center;font-size:14px}
+nav.menu{display:flex;gap:4px;flex-wrap:wrap}
+nav.menu a{font-family:var(--f-titre);font-size:14px;font-weight:500;text-decoration:none;
+  color:var(--encre-doux);padding:7px 13px;border-radius:999px;transition:background .18s,color .18s}
+nav.menu a:hover{background:color-mix(in srgb,var(--prune) 12%,transparent);color:var(--prune)}
+
+/* ── accroche ── */
+.accroche{padding-block:clamp(38px,7vw,78px) clamp(30px,5vw,56px)}
+.accroche .enveloppe{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,5vw,54px);align-items:center}
+.accroche h1{font-size:clamp(34px,6.4vw,62px);line-height:1.04;margin:0 0 18px;font-weight:700;color:var(--prune)}
+.accroche h1 em{font-style:normal;color:var(--corail)}
+.accroche p.chapo{font-size:clamp(17px,2.1vw,20px);color:var(--encre-doux);margin:0 0 26px;max-width:46ch}
+.boutons{display:flex;gap:12px;flex-wrap:wrap}
+.bouton{font-family:var(--f-titre);font-weight:600;font-size:15px;text-decoration:none;
+  padding:13px 22px;border-radius:999px;display:inline-flex;align-items:center;gap:9px;
+  transition:transform .16s, box-shadow .16s}
+.bouton.plein{background:var(--prune);color:#fff;box-shadow:var(--ombre)}
+.bouton.vide{border:2px solid var(--ligne);color:var(--encre)}
+.bouton:hover{transform:translateY(-2px)}
+.duo{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:4px}
+.duo img{width:100%;filter:drop-shadow(0 16px 24px rgba(43,36,64,.2))}
+.duo .soleil{position:absolute;inset:6% 8% 20% 6%;border-radius:50%;z-index:-1;
+  background:radial-gradient(circle,color-mix(in srgb,var(--or) 46%,transparent) 0%,transparent 68%)}
+.chiffres{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.chiffre b{font-family:var(--f-titre);font-size:26px;color:var(--prune);display:block;line-height:1.1;
+  font-variant-numeric:tabular-nums}
+.chiffre span{font-size:13.5px;color:var(--encre-doux)}
+
+/* ── sections ── */
+section{padding-block:clamp(34px,5.5vw,64px);scroll-margin-top:72px}
+.chapeau{max-width:62ch;margin-bottom:clamp(22px,3.4vw,38px)}
+.chapeau .eyebrow{font-family:var(--f-titre);font-size:12.5px;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--corail);margin:0 0 7px}
+.chapeau h2{font-size:clamp(26px,4vw,38px);margin:0 0 10px;color:var(--prune);font-weight:600}
+.chapeau p{margin:0;color:var(--encre-doux)}
+
+/* ── les étapes du voyage ── */
+.voyage{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:clamp(16px,2.4vw,26px)}
+.stop{text-decoration:none;display:flex;flex-direction:column;background:var(--papier2);
+  border:1px solid var(--ligne);border-radius:16px;overflow:hidden;box-shadow:var(--ombre);
+  transition:transform .2s, box-shadow .2s}
+.stop:hover{transform:translateY(-4px)}
+.stop:hover .jouer{opacity:1;transform:scale(1)}
+.vignette{position:relative;aspect-ratio:16/9;background:var(--ligne);overflow:hidden}
+.vignette img{width:100%;height:100%;object-fit:cover;display:block}
+.duree{position:absolute;right:8px;bottom:8px;background:rgba(20,14,34,.82);color:#fff;
+  font-family:var(--f-titre);font-size:12px;font-weight:500;padding:3px 8px;border-radius:5px;
+  font-variant-numeric:tabular-nums}
+.jouer{position:absolute;inset:0;margin:auto;width:52px;height:52px;border-radius:50%;
+  background:rgba(107,74,160,.92);color:#fff;display:grid;place-items:center;font-size:19px;
+  opacity:0;transform:scale(.8);transition:opacity .2s, transform .2s;padding-left:3px}
+.stop .texte{padding:15px 17px 19px;min-width:0}
+.tampon{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-titre);font-size:11.5px;
+  font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#fff;background:var(--prune);
+  padding:4px 11px 4px 4px;border-radius:999px;margin-bottom:9px}
+.tampon .dr{background:var(--papier2);width:19px;height:19px;border-radius:50%;display:grid;
+  place-items:center;font-size:11px}
+.stop h3{font-size:17.5px;margin:0 0 6px;font-weight:600;line-height:1.3}
+.stop p{margin:0;font-size:14.5px;color:var(--encre-doux);line-height:1.55}
+
+/* ── le livre ── */
+.choix{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:22px}
+.choix button span{font-size:15px}
+.choix button{font-family:var(--f-titre);font-size:14px;font-weight:500;cursor:pointer;
+  border:2px solid var(--ligne);background:transparent;color:var(--encre);padding:9px 17px;
+  border-radius:999px;display:inline-flex;align-items:center;gap:7px;transition:all .18s}
+.choix button[aria-pressed="true"]{background:var(--prune);border-color:var(--prune);color:#fff}
+/* COUVERTURE : une vraie page de titre, pas une image d'épisode brute. */
+.couverture{position:relative;min-height:clamp(330px,46vw,440px);display:grid;
+  place-items:center;overflow:hidden;text-align:center}
+.couverture .fond{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  filter:saturate(1.06)}
+.couverture .voile{position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(43,36,64,.14) 0%,rgba(43,36,64,.30) 42%,rgba(43,36,64,.86) 100%)}
+.couverture .cadre{position:absolute;inset:clamp(13px,2vw,22px);border:2px solid rgba(255,255,255,.4);
+  border-radius:9px;pointer-events:none}
+.couverture .cadre::after{content:"";position:absolute;inset:5px;border:1px solid rgba(255,255,255,.22);
+  border-radius:5px}
+.couv-contenu{position:relative;z-index:2;padding:clamp(28px,4.4vw,46px) clamp(22px,4vw,44px);
+  max-width:38ch;display:flex;flex-direction:column;align-items:center;gap:11px}
+.couv-pastille{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-titre);
+  font-size:11.5px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:#fff;
+  background:rgba(107,74,160,.9);padding:4px 13px 4px 4px;border-radius:999px;
+  box-shadow:0 2px 10px rgba(0,0,0,.26)}
+.couv-pastille .dr{background:#fff;width:21px;height:21px;border-radius:50%;display:grid;
+  place-items:center;font-size:12px}
+.couverture h3{font-family:var(--f-titre);font-size:clamp(27px,5vw,44px);font-weight:700;
+  color:#fff;margin:0;line-height:1.08;text-shadow:0 3px 18px rgba(20,14,34,.5)}
+.couv-accroche{font-family:var(--f-texte);font-style:italic;font-size:clamp(14.5px,1.9vw,17px);
+  color:rgba(255,255,255,.93);margin:0;line-height:1.5;text-shadow:0 2px 12px rgba(20,14,34,.6)}
+.couv-origine{font-family:var(--f-titre);font-size:11px;font-weight:500;letter-spacing:.13em;
+  text-transform:uppercase;color:rgba(255,255,255,.72);margin:0}
+.couv-ouvrir{font-family:var(--f-titre);font-size:14.5px;font-weight:600;cursor:pointer;border:none;
+  background:var(--or);color:#2b2440;padding:12px 26px;border-radius:999px;margin-top:5px;
+  box-shadow:0 5px 18px rgba(20,14,34,.3);transition:transform .16s}
+.couv-ouvrir:hover{transform:translateY(-2px)}
+
+/* ── LECTEUR : l'allure d'une playlist, les écoutes chez YouTube ── */
+.lecteur{background:var(--papier2);border:1px solid var(--ligne);border-radius:18px;
+  box-shadow:var(--ombre);overflow:hidden}
+.lecteur-tete{display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  padding:clamp(18px,2.6vw,26px);border-bottom:1px solid var(--ligne);
+  background:linear-gradient(135deg,color-mix(in srgb,var(--prune) 14%,transparent),
+    color-mix(in srgb,var(--corail) 9%,transparent))}
+.lecteur-info{margin-right:auto;min-width:0}
+.lecteur-nom{font-family:var(--f-titre);font-size:clamp(19px,2.6vw,24px);font-weight:600;
+  color:var(--prune);display:block;line-height:1.2}
+.lecteur-meta{font-family:var(--f-titre);font-size:13.5px;color:var(--encre-doux);
+  font-variant-numeric:tabular-nums}
+.pistes{display:flex;flex-direction:column}
+.piste{display:flex;align-items:center;gap:14px;padding:12px clamp(16px,2.4vw,24px);
+  text-decoration:none;border-bottom:1px solid var(--ligne);transition:background .16s}
+.piste:last-child{border-bottom:none}
+.piste:hover{background:color-mix(in srgb,var(--prune) 8%,transparent)}
+.piste:hover .lire{opacity:1;transform:scale(1)}
+.piste:hover .num{opacity:0}
+.piste .num{font-family:var(--f-titre);font-size:14px;font-weight:600;color:var(--encre-doux);
+  width:22px;text-align:center;font-variant-numeric:tabular-nums;transition:opacity .14s}
+.piste .lire{position:absolute;margin-left:1px;width:22px;text-align:center;color:var(--prune);
+  font-size:13px;opacity:0;transform:scale(.7);transition:opacity .16s,transform .16s}
+.piste-txt{display:flex;flex-direction:column;gap:1px;min-width:0;margin-right:auto}
+.piste-txt strong{font-family:var(--f-titre);font-size:16px;font-weight:600;line-height:1.3;
+  color:var(--encre)}
+.piste-pays{font-size:13.5px;color:var(--encre-doux)}
+.piste-duree{font-family:var(--f-titre);font-size:13.5px;color:var(--encre-doux);
+  font-variant-numeric:tabular-nums;flex:none}
+.lecteur-note{margin:0;padding:14px clamp(16px,2.4vw,24px);font-size:13.5px;
+  color:var(--encre-doux);border-top:1px solid var(--ligne);
+  background:color-mix(in srgb,var(--prune) 5%,transparent)}
+.entete-livre{display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  padding:13px 18px;border-bottom:1px solid var(--ligne);
+  background:color-mix(in srgb,var(--prune) 6%,transparent)}
+.origine{font-family:var(--f-titre);font-size:12.5px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--encre-doux)}
+.bascule{display:flex;gap:3px;margin-left:auto;background:color-mix(in srgb,var(--encre) 8%,transparent);
+  padding:3px;border-radius:999px}
+.bascule button{font-family:var(--f-titre);font-size:13.5px;font-weight:600;cursor:pointer;
+  border:none;background:transparent;color:var(--encre-doux);padding:7px 15px;border-radius:999px;
+  transition:background .18s,color .18s}
+.bascule button[aria-pressed="true"]{background:var(--prune);color:#fff}
+.page .prose{margin:0;font-size:clamp(16px,1.85vw,18.5px);line-height:1.78}
+.page.illustration img{transition:opacity .26s}
+.page.illustration img.change{opacity:0}
+.livre{background:var(--papier2);border:1px solid var(--ligne);border-radius:18px;
+  box-shadow:var(--ombre);overflow:hidden}
+.pages{display:grid;grid-template-columns:1fr 1fr;min-height:360px;position:relative}
+.pages::after{content:"";position:absolute;left:50%;top:5%;bottom:5%;width:1px;
+  background:linear-gradient(transparent,var(--ligne) 14%,var(--ligne) 86%,transparent)}
+.page{padding:clamp(22px,3.4vw,38px);min-width:0;display:flex;flex-direction:column;justify-content:center}
+.page.illustration{padding:0;background:var(--ligne)}
+.page.illustration img{width:100%;height:100%;object-fit:cover;display:block}
+.page .section-titre{font-family:var(--f-titre);font-size:12.5px;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--corail);margin:0 0 14px}
+.page .vers{margin:0;font-size:clamp(16px,1.9vw,19px);line-height:1.95}
+.page .vers span{display:block}
+.page .lettrine::first-letter{font-family:var(--f-titre);font-size:2.9em;float:left;line-height:.82;
+  padding:4px 10px 0 0;color:var(--prune);font-weight:600}
+.feuilleter{display:flex;align-items:center;gap:14px;padding:13px 18px;border-top:1px solid var(--ligne);
+  background:color-mix(in srgb,var(--prune) 6%,transparent)}
+.feuilleter button{font-family:var(--f-titre);font-size:14px;font-weight:600;cursor:pointer;
+  border:none;background:var(--prune);color:#fff;width:38px;height:38px;border-radius:50%;
+  display:grid;place-items:center;transition:opacity .16s}
+.feuilleter button:disabled{opacity:.3;cursor:default}
+.feuilleter .compte{font-family:var(--f-titre);font-size:13.5px;color:var(--encre-doux);
+  font-variant-numeric:tabular-nums;margin-right:auto}
+.feuilleter .lien{font-family:var(--f-titre);font-size:13.5px;font-weight:600;color:var(--prune);
+  text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.morale{margin-top:20px;padding:16px 20px;border-left:3px solid var(--or);
+  background:color-mix(in srgb,var(--or) 11%,transparent);border-radius:0 10px 10px 0}
+.morale p{margin:0}
+.morale-phrase{font-family:var(--f-titre);font-weight:600;font-size:16px;color:var(--encre);
+  line-height:1.4}
+.morale-expl{margin-top:9px !important;font-size:14.8px;line-height:1.62;color:var(--encre-doux)}
+.morale-expl em{font-style:italic;color:var(--encre)}
+.morale-q{margin-top:11px !important;font-family:var(--f-titre);font-size:14.5px;font-weight:500;
+  color:var(--prune);line-height:1.45}
+.morale-q::before{content:"💬 ";}
+
+/* ── LA MAPPEMONDE : une carte d'enfant, pas un atlas ── */
+.carte-bloc{display:grid;grid-template-columns:1.55fr .85fr;gap:clamp(18px,2.8vw,30px);
+  align-items:start}
+.mappemonde{width:100%;height:auto;display:block;border-radius:20px;
+  border:1px solid var(--ligne);box-shadow:var(--ombre);
+  --mer-haut:#cfeaf4; --mer-bas:#a9d8ea; --terre-haut:#ddd0a4; --terre-bas:#c2b47e}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .mappemonde{
+  --mer-haut:#2a3358; --mer-bas:#1e2644; --terre-haut:#4e4a6e; --terre-bas:#3b3858}}
+:root[data-theme="dark"] .mappemonde{
+  --mer-haut:#2a3358; --mer-bas:#1e2644; --terre-haut:#4e4a6e; --terre-bas:#3b3858}
+.mappemonde .mer{fill:url(#mer)}
+.mappemonde .vague{fill:none;stroke:#ffffff;stroke-opacity:.42;stroke-width:2.4;
+  stroke-linecap:round}
+.mappemonde .terre{fill:url(#sol);stroke:#a89566;stroke-width:2.4;stroke-linejoin:round;
+  filter:drop-shadow(0 3px 0 rgba(120,100,60,.22))}
+.mappemonde .route{fill:none;stroke:var(--corail);stroke-width:3;stroke-dasharray:2 10;
+  stroke-linecap:round;opacity:.72}
+.mappemonde .rose-fond{fill:#fff;fill-opacity:.5}
+.mappemonde .rose-cercle{fill:none;stroke:var(--prune);stroke-width:2;stroke-opacity:.6}
+.mappemonde .rose-n,.mappemonde .rose-e{fill:var(--prune);fill-opacity:.55}
+.mappemonde .rose-pointe{fill:var(--corail)}
+.mappemonde .rose-txt{font-family:var(--f-titre);font-size:13px;font-weight:600;fill:var(--prune)}
+.mappemonde .coque{fill:#a9703c}.mappemonde .mat{stroke:#7a5234;stroke-width:2.6}
+.mappemonde .voile{fill:#fff;fill-opacity:.92}.mappemonde .voile2{fill:#ffe0c4}
+.mappemonde .corps{fill:#7fb4d8}.mappemonde .queue{fill:#6ea4c8}
+.mappemonde .oeil{fill:#2b2440}
+.mappemonde .jet{fill:none;stroke:#ffffff;stroke-opacity:.75;stroke-width:3;stroke-linecap:round}
+.mappemonde .etape{cursor:pointer}
+.mappemonde .socle{fill:#6b4aa0;opacity:.14;transition:opacity .18s}
+.mappemonde .mon{transition:transform .2s;transform-box:fill-box;transform-origin:center bottom;
+  filter:drop-shadow(0 2px 2px rgba(80,60,30,.28))}
+.mappemonde .etape:hover .mon,.mappemonde .etape:focus .mon{transform:scale(.86) translateY(-5px)}
+.mappemonde .etape:hover .socle,.mappemonde .etape:focus .socle{opacity:.3}
+.mappemonde .etape[aria-current="true"] .socle{fill:var(--or);opacity:.72}
+.mappemonde .pin-nom{font-family:var(--f-titre);font-size:14.5px;font-weight:600;
+  fill:var(--encre);pointer-events:none;paint-order:stroke;
+  stroke:var(--papier2);stroke-width:4.5px;stroke-linejoin:round}
+.mappemonde .etape:focus{outline:none}
+.mappemonde .etape:focus .pin-fond{stroke-width:5}
+.carte-panneau{background:var(--papier2);border:1px solid var(--ligne);border-radius:18px;
+  padding:clamp(18px,2.6vw,24px);box-shadow:var(--ombre);min-height:190px}
+.carte-vide{margin:0;color:var(--encre-doux);font-size:15px;font-style:italic}
+.carte-pays{display:flex;align-items:center;gap:9px;margin:0 0 14px;
+  font-family:var(--f-titre);font-size:20px;font-weight:600;color:var(--prune)}
+.carte-pays .dr{font-size:24px}
+.carte-conte{display:flex;gap:13px;align-items:center;text-decoration:none;
+  padding:9px 0;border-bottom:1px solid var(--ligne)}
+.carte-conte:last-child{border-bottom:none}
+.carte-conte img{width:62px;height:40px;object-fit:cover;border-radius:7px;flex:none}
+.carte-conte-txt{min-width:0}
+.carte-conte strong{display:block;font-family:var(--f-titre);font-size:15px;font-weight:600;
+  color:var(--encre);line-height:1.3}
+.carte-conte span{font-size:13px;color:var(--encre-doux)}
+@media (max-width:760px){.carte-bloc{grid-template-columns:1fr}}
+
+/* ── LE MANIFESTE : l'intention de la chaîne, avant les deux guides ── */
+.manifeste{display:grid;grid-template-columns:1.6fr .9fr;gap:clamp(22px,4vw,46px);
+  align-items:start;margin-bottom:clamp(24px,3.6vw,36px)}
+.manifeste-txt p{margin:0 0 14px;color:var(--encre-doux);font-size:16px;line-height:1.72;max-width:58ch}
+.manifeste-txt p:last-child{margin-bottom:0}
+.manifeste-txt .grand{font-family:var(--f-texte);font-size:clamp(19px,2.5vw,23px);line-height:1.5;
+  color:var(--encre);font-style:italic}
+.manifeste-txt .signe{font-family:var(--f-titre);font-weight:600;font-size:16.5px;color:var(--prune);
+  font-style:normal;margin-top:18px}
+.manifeste-chiffres{display:flex;flex-direction:column;gap:14px;
+  padding:clamp(18px,2.6vw,24px);border-radius:16px;border:1px solid var(--ligne);
+  background:color-mix(in srgb,var(--prune) 7%,transparent)}
+.mc{display:flex;align-items:center;gap:13px}
+.mc b{font-family:var(--f-titre);font-size:30px;color:var(--prune);line-height:1;
+  font-variant-numeric:tabular-nums;min-width:62px}
+.mc span{font-family:var(--f-titre);font-size:13px;color:var(--encre-doux);line-height:1.3}
+
+/* ── LES DEUX VEDETTES : plus grandes, elles portent la marque ── */
+.stars{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.6vw,26px)}
+.star{position:relative;display:flex;gap:clamp(16px,2.4vw,24px);align-items:center;
+  padding:clamp(20px,3vw,30px);border-radius:20px;overflow:hidden;
+  background:var(--papier2);border:1px solid var(--ligne);box-shadow:var(--ombre)}
+.star::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 58% 78% at 16% 50%,
+    color-mix(in srgb,var(--or) 26%,transparent) 0%,transparent 70%)}
+.star-img{position:relative;flex:none;width:clamp(96px,13vw,132px);display:grid;place-items:center}
+.star-img img{width:100%;filter:drop-shadow(0 10px 18px rgba(43,36,64,.22))}
+.star-txt{position:relative;min-width:0}
+.star-txt h3{font-family:var(--f-titre);margin:0 0 3px;font-size:clamp(23px,3.1vw,29px);
+  color:var(--prune);font-weight:700;line-height:1.1}
+.star-txt .role{font-family:var(--f-titre);font-size:11.5px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--corail);display:block;margin-bottom:3px}
+.star-txt .ou{font-family:var(--f-titre);font-size:12px;font-weight:500;color:var(--encre-doux);
+  display:block;margin-bottom:10px}
+.star-txt p{margin:0;font-size:15.2px;color:var(--encre-doux);line-height:1.6}
+
+/* ── LES MORALES ── */
+.morales{display:grid;grid-template-columns:repeat(auto-fill,minmax(316px,1fr));
+  gap:clamp(14px,2.2vw,22px)}
+.morale-carte{background:var(--papier2);border:1px solid var(--ligne);border-radius:16px;
+  padding:clamp(19px,2.6vw,25px);box-shadow:var(--ombre);min-width:0;
+  border-top:3px solid var(--or)}
+.morale-carte .m-pays{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-titre);
+  font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#fff;
+  background:var(--prune);padding:3px 11px 3px 3px;border-radius:999px;margin-bottom:9px}
+.morale-carte .m-pays .dr{background:var(--papier2);width:19px;height:19px;border-radius:50%;
+  display:grid;place-items:center;font-size:11px}
+.morale-carte h3{font-family:var(--f-titre);margin:0 0 9px;font-size:18px;color:var(--prune);
+  font-weight:600;line-height:1.25}
+.morale-carte p{margin:0}
+.m-phrase{font-family:var(--f-titre);font-weight:600;font-size:16px;color:var(--encre);
+  line-height:1.4}
+.m-expl{margin-top:10px !important;font-size:14.8px;line-height:1.62;color:var(--encre-doux)}
+.m-q{margin-top:12px !important;padding-top:11px;border-top:1px dashed var(--ligne);
+  font-family:var(--f-titre);font-size:14.3px;font-weight:500;color:var(--prune);line-height:1.45}
+.m-q::before{content:"💬 "}
+
+/* ── LES PERSONNAGES ── */
+.galerie{display:grid;grid-template-columns:repeat(auto-fill,minmax(282px,1fr));
+  gap:clamp(14px,2.2vw,22px)}
+.fiche{background:var(--papier2);border:1px solid var(--ligne);border-radius:16px;
+  padding:clamp(17px,2.4vw,22px);display:flex;gap:16px;align-items:flex-start;
+  box-shadow:var(--ombre);min-width:0}
+.fiche .vign{flex:none;width:86px;height:86px;border-radius:50%;overflow:hidden;
+  background:color-mix(in srgb,var(--prune) 11%,transparent);display:grid;place-items:center;
+  border:2px solid var(--ligne)}
+.fiche .vign img{max-width:88%;max-height:88%;object-fit:contain}
+.fiche-txt{min-width:0}
+.fiche .role{font-family:var(--f-titre);font-size:11px;font-weight:600;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--corail);display:block;margin-bottom:2px}
+.fiche h3{font-family:var(--f-titre);margin:0 0 3px;font-size:19px;color:var(--prune);font-weight:600;
+  line-height:1.2}
+.fiche .ou{font-family:var(--f-titre);font-size:11.5px;font-weight:500;color:var(--encre-doux);
+  display:block;margin-bottom:8px}
+.fiche p{margin:0;font-size:14.8px;color:var(--encre-doux);line-height:1.58}
+
+/* ── qui sont-ils ── */
+.portraits{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,34px)}
+.portrait{background:var(--papier2);border:1px solid var(--ligne);border-radius:16px;
+  padding:clamp(20px,3vw,30px);display:flex;gap:18px;align-items:flex-start;box-shadow:var(--ombre)}
+.portrait img{width:92px;flex:none}
+.portrait h3{margin:0 0 7px;font-size:21px;color:var(--prune);font-weight:600}
+.portrait p{margin:0;font-size:15.5px;color:var(--encre-doux);line-height:1.6}
+.portrait .role{font-family:var(--f-titre);font-size:12px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--corail);display:block;margin-bottom:4px}
+
+/* ── pied ── */
+footer{border-top:1px solid var(--ligne);padding-block:34px 42px;margin-top:20px}
+footer .enveloppe{display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start}
+footer .bloc{min-width:0}
+footer h4{font-family:var(--f-titre);font-size:13px;font-weight:600;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--corail);margin:0 0 10px}
+footer a{display:block;text-decoration:none;color:var(--encre-doux);font-size:15px;padding:3px 0}
+footer a:hover{color:var(--prune)}
+footer .fin{width:100%;border-top:1px solid var(--ligne);padding-top:18px;margin-top:8px;
+  font-size:13.5px;color:var(--encre-doux)}
+.courriel{font-family:var(--f-titre);background:color-mix(in srgb,var(--prune) 10%,transparent);
+  padding:3px 9px;border-radius:6px;font-size:14px;user-select:all}
+
+
+/* ── LES CAHIERS DE COLORIAGE : la boutique, sans en avoir l'air ── */
+.cahiers-atouts{display:flex;flex-wrap:wrap;gap:9px 10px;margin:0 0 clamp(20px,3vw,30px);padding:0;list-style:none}
+.cahiers-atouts li{font-family:var(--f-titre);font-size:13.5px;font-weight:500;color:var(--encre);
+  background:var(--papier2);border:1px solid var(--ligne);padding:7px 14px;border-radius:999px}
+.cahiers{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:clamp(16px,2.4vw,26px)}
+.cahier{background:var(--papier2);border:1px solid var(--ligne);border-radius:18px;overflow:hidden;
+  box-shadow:var(--ombre);display:flex;flex-direction:column;min-width:0}
+.cahier-couv{position:relative;background:color-mix(in srgb,var(--prune) 9%,transparent);
+  padding:clamp(16px,2.4vw,22px) clamp(16px,2.4vw,22px) 0;display:grid;place-items:center}
+.cahier-couv img{width:min(78%,250px);aspect-ratio:745/972;object-fit:cover;border-radius:4px 10px 10px 4px;
+  box-shadow:-5px 0 0 rgba(43,36,64,.18),0 14px 26px rgba(43,36,64,.22);transform:translateY(10px)}
+.cahier-prix{position:absolute;top:14px;right:14px;font-family:var(--f-titre);font-weight:700;font-size:15px;
+  background:var(--or);color:#2b2440;padding:6px 12px;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.15)}
+.cahier-txt{padding:26px clamp(17px,2.4vw,22px) 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cahier-tome{font-family:var(--f-titre);font-size:11.5px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--corail)}
+.cahier h3{font-family:var(--f-titre);font-size:20px;margin:0;color:var(--prune);font-weight:600;line-height:1.2}
+.cahier p{margin:0;font-size:14.8px;color:var(--encre-doux);line-height:1.58}
+.cahier-pages{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:4px}
+.cahier-pages img{width:100%;aspect-ratio:383/495;object-fit:cover;background:#fff;border:1px solid var(--ligne);
+  border-radius:4px}
+.cahier-acheter{margin-top:auto;padding-top:10px;display:flex;flex-direction:column;gap:6px}
+.cahier-acheter .bouton{justify-content:center}
+.cahier-acheter .bouton[aria-disabled="true"]{background:var(--ligne);color:var(--encre-doux);box-shadow:none;
+  pointer-events:none}
+.cahier-note{font-family:var(--f-titre);font-size:12.5px;color:var(--encre-doux);text-align:center}
+.cahiers-bas{margin:clamp(18px,2.6vw,26px) 0 0;font-size:14px;color:var(--encre-doux)}
+
+@media (max-width:760px){
+  .accroche .enveloppe{grid-template-columns:1fr}
+  .duo{max-width:300px;margin:0 auto}
+  .portraits{grid-template-columns:1fr}
+  .stars{grid-template-columns:1fr}
+  .manifeste{grid-template-columns:1fr}
+  .pages{grid-template-columns:1fr}
+  .page.illustration{aspect-ratio:16/9}
+  .pages::after{display:none}
+}
+
+/* ── polish Hallmark (08/11/2026) ─────────────────────────────────────────
+   Contraste, étiquettes, états des boutons, en-tête mobile. */
+:root{--corail-texte:#a84f42;--corail-titre:#b4574a;--sur-prune:#fffaf0}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --corail-texte:#e89b8a;--corail-titre:#e89b8a;--sur-prune:#1d1830}}
+:root[data-theme="dark"]{--corail-texte:#e89b8a;--corail-titre:#e89b8a;--sur-prune:#1d1830}
+
+/* contraste : le corail clair passait à 2,5:1 sur le papier, il en faut 4,5 */
+.accroche h1 em{color:var(--corail-titre)}
+.role,.star-txt .role,.fiche .role,.portrait .role,.cahier-tome,footer h4,
+.page .section-titre{color:var(--corail-texte)}
+/* texte sur le violet : lisible aussi en mode sombre (2,5:1 avant) */
+.bouton.plein,.tampon,.morale-carte .m-pays,.choix button[aria-pressed="true"],
+.bascule button[aria-pressed="true"],.feuilleter button{color:var(--sur-prune)}
+
+/* étiquettes : fini les petites capitales espacées, on écrit normalement */
+.tampon,.morale-carte .m-pays,.couv-pastille{text-transform:none;letter-spacing:0;font-size:13px}
+.role,.star-txt .role,.fiche .role,.portrait .role,.cahier-tome{text-transform:none;
+  letter-spacing:0;font-size:14px;font-weight:600}
+footer h4{text-transform:none;letter-spacing:0;font-size:15px}
+.couv-origine,.origine{text-transform:none;letter-spacing:0;font-size:13.5px}
+.page .section-titre{text-transform:none;letter-spacing:0;font-size:15px}
+
+/* le titre de section reprend la place de l'étiquette retirée */
+.chapeau h2{margin-top:0}
+
+/* boutons : transitions nommées, état « appuyé », cibles tactiles de 44 px */
+.choix button{transition:background-color .18s,border-color .18s,color .18s}
+.bouton:active,.couv-ouvrir:active{transform:translateY(0) scale(.98)}
+.stop:active{transform:translateY(-1px)}
+.choix button:hover{border-color:var(--prune)}
+.choix button:active,.bascule button:active{transform:scale(.97)}
+.feuilleter button{width:44px;height:44px;font-size:18px}
+.feuilleter button:not(:disabled):hover{background:var(--prune-clair)}
+nav.menu a{min-height:40px;display:inline-flex;align-items:center}
+nav.menu a:active{background:color-mix(in srgb,var(--prune) 20%,transparent)}
+
+/* le lecteur : un aplat léger au lieu du dégradé violet */
+.lecteur-tete{background:color-mix(in srgb,var(--prune) 9%,var(--papier2))}
+
+/* drapeaux de secours (Windows n'affiche pas les drapeaux emoji) */
+.drap{display:inline-block;width:1.35em;height:.95em;vertical-align:-.12em;border-radius:2px;
+  box-shadow:0 0 0 1px rgba(43,36,64,.18)}
+.dr .drap{width:15px;height:11px;vertical-align:middle}
+
+/* téléphone : l'en-tête collant prenait le quart de l'écran (9 liens sur 3 lignes) */
+@media (max-width:760px){
+  .bandeau .enveloppe{flex-wrap:nowrap;flex-direction:column;align-items:stretch;gap:2px;padding-block:8px 4px}
+  nav.menu{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-20px;padding-inline:14px;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14px,#000 calc(100% - 28px),transparent)}
+  nav.menu::-webkit-scrollbar{display:none}
+  nav.menu a{flex:none;white-space:nowrap}
+  section{scroll-margin-top:104px}
+  .accroche{padding-top:22px}
+  .duo{max-width:240px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header class="bandeau"><div class="enveloppe">
+  <span class="marque"><span class="pastille">🌍</span>Bulle &amp; Pistache</span>
+  <nav class="menu">
+    <a href="#voyage">Les contes</a>
+    <a href="#carte">La carte</a>
+    <a href="#ecouter">À la suite</a>
+    <a href="#livre">À lire</a>
+    <a href="#cahiers">À colorier</a>
+    <a href="#eux">L’histoire</a>
+    <a href="#personnages">Les personnages</a>
+    <a href="#morales">Les morales</a>
+    <a href="https://www.youtube.com/@bullepistache" target="_blank" rel="noopener">La chaîne</a>
+  </nav>
+</div></header>
+
+<section class="accroche"><div class="enveloppe">
+  <div>
+    <h1>Une histoire,<br>un pays,<br><em>chaque semaine.</em></h1>
+    <p class="chapo">Bulle, une petite chienne curieuse, et Pistache, son ami perroquet globe-trotteur,
+      emmènent les tout-petits à la découverte des plus beaux contes du monde — chantés en français,
+      pour les 2 à 5 ans.</p>
+    <div class="boutons">
+      <a class="bouton plein" href="https://www.youtube.com/@bullepistache" target="_blank" rel="noopener">▶ Voir la chaîne</a>
+      <a class="bouton vide" href="#livre">Lire un conte</a>
+      <a class="bouton vide" href="#cahiers">🖍️ Les cahiers de coloriage</a>
+    </div>
+    <div class="chiffres">
+      <div class="chiffre"><b>10</b><span>contes du monde</span></div>
+      <div class="chiffre"><b>9</b><span>pays visités</span></div>
+      <div class="chiffre"><b>2–5</b><span>ans</span></div>
+    </div>
+  </div>
+  <div class="duo"><div class="soleil"></div>
+    <img src="/img/02d1a053de4d04.png" alt="Bulle, la petite chienne">
+    <img src="/img/deb04de6d3c127.png" alt="Pistache, le perroquet">
+  </div>
+</div></section>
+
+<section id="voyage"><div class="enveloppe">
+  <div class="chapeau">
+    <h2>Chaque conte est une étape</h2>
+    <p>Un pays, une histoire, une chanson à reprendre en chœur. Choisis une étape — la vidéo s’ouvre sur YouTube.</p>
+  </div>
+  <div class="voyage">
+      <a class="stop" href="https://www.youtube.com/watch?v=d-t388csBQU" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/696f0750e49926.jpg" alt="Le Gros Navet" loading="lazy">
+          <span class="duree">3:23</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🇷🇺</span>Russie</span>
+          <h3>Le Gros Navet</h3><p>Grand-Père plante un navet… qui devient GÉANT. Toute la famille tire, tire — et PLOP !</p>
+        </div></a>
+      <a class="stop" href="https://www.youtube.com/watch?v=kskZ5nRgGKg" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/55712029c5d1ee.jpg" alt="Boucle d’Or et les 3 Ours" loading="lazy">
+          <span class="duree">3:53</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🇬🇧</span>Angleterre</span>
+          <h3>Boucle d’Or et les 3 Ours</h3><p>Trop chaud, trop froid, juste bien ! Trois bols, trois chaises, trois petits lits.</p>
+        </div></a>
+      <a class="stop" href="https://www.youtube.com/watch?v=nTGKD74wGHg" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/3433b4645a0a02.jpg" alt="Les 3 Petits Cochons" loading="lazy">
+          <span class="duree">2:52</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🇬🇧</span>Angleterre</span>
+          <h3>Les 3 Petits Cochons</h3><p>Paille, bois, brique — et le loup qui souffle, souffle, souffle. FLOUCH ! CRAAAC !</p>
+        </div></a>
+      <a class="stop" href="https://www.youtube.com/watch?v=7CNSGU8BHzg" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/fa08229f5042c8.jpg" alt="Le Petit Chaperon Rouge" loading="lazy">
+          <span class="duree">4:08</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🇫🇷</span>France</span>
+          <h3>Le Petit Chaperon Rouge</h3><p>Promenons-nous dans les bois, pendant que le loup n’y est pas…</p>
+        </div></a>
+      <a class="stop" href="https://www.youtube.com/watch?v=NWDaIbtV9AQ" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/aa36e2d24c1289.jpg" alt="Aladin et la lampe magique" loading="lazy">
+          <span class="duree">3:46</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🪔</span>Orient</span>
+          <h3>Aladin et la lampe magique</h3><p>Frotte la lampe, le génie bleu apparaît — et hop, sur le tapis volant !</p>
+        </div></a>
+      <a class="stop" href="https://www.youtube.com/watch?v=DBZydRBrzCg" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/cd989f11e1a8ba.jpg" alt="Le Lion et la Souris" loading="lazy">
+          <span class="duree">3:17</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🌍</span>Afrique</span>
+          <h3>Le Lion et la Souris</h3><p>Un lion énorme, une toute petite souris. Et un grand filet qui change tout.</p>
+        </div></a>
+      <a class="stop" href="https://www.youtube.com/watch?v=YGblkgriYn4" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/654bf88e846316.jpg" alt="Momotaro" loading="lazy">
+          <span class="duree">3:45</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🇯🇵</span>Japon</span>
+          <h3>Momotaro</h3><p>Une pêche géante s’ouvre en lumière… et un bébé fait « Coucou ! »</p>
+        </div></a>
+      <a class="stop" href="https://www.youtube.com/watch?v=UttOMVnN0n0" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/d68ea2922619f2.jpg" alt="Le Coq Kiriko" loading="lazy">
+          <span class="duree">3:46</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🇲🇽</span>Mexique</span>
+          <h3>Le Coq Kiriko</h3><p>Son beau bec est tout sale… et personne ne veut l’aider. Sauf le soleil !</p>
+        </div></a>
+      <a class="stop" href="https://www.youtube.com/watch?v=4Ugk8kDblBs" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/6d96d2de71787a.jpg" alt="La Moufle" loading="lazy">
+          <span class="duree">3:49</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🇺🇦</span>Ukraine</span>
+          <h3>La Moufle</h3><p>Toc toc toc ! Sept animaux serrés au chaud… et une toute petite fourmi. CRAAAC !</p>
+        </div></a>
+      <a class="stop" href="https://www.youtube.com/watch?v=VQPpux1qeiI" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/bedc32361a0f03.jpg" alt="Les Musiciens de Brême" loading="lazy">
+          <span class="duree">3:37</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🇩🇪</span>Allemagne</span>
+          <h3>Les Musiciens de Brême</h3><p>Hi-han ! Ouaf ! Miaou ! Cocorico ! Quatre amis, une pyramide… et un monstre à quatre têtes !</p>
+        </div></a>
+        <a class="stop" href="https://www.youtube.com/watch?v=noT9lfaNmBg" target="_blank" rel="noopener">
+        <div class="vignette"><img src="/img/19a14250b6e556.jpg" alt="Youpi, c’est la rentrée !" loading="lazy">
+          <span class="duree">2:05</span>
+          <span class="jouer" aria-hidden="true">▶</span></div>
+        <div class="texte">
+          <span class="tampon"><span class="dr">🎒</span>Chanson</span>
+          <h3>Youpi, c’est la rentrée !</h3><p>Une chanson à gestes pour reprendre le chemin de l’école en dansant.</p>
+        </div></a>
+  </div>
+  <div class="boutons" style="margin-top:28px">
+    <a class="bouton vide" href="https://www.youtube.com/playlist?list=PLV44KZQSYE18" target="_blank" rel="noopener">▶ Tout écouter à la suite</a>
+    <a class="bouton vide" href="https://www.youtube.com/watch?v=v4E5ogfHBX4" target="_blank" rel="noopener">La compilation — 25 min</a>
+  </div>
+</div></section>
+
+<section id="carte"><div class="enveloppe">
+  <div class="chapeau">
+    <h2>D’où viennent les contes</h2>
+    <p>Touche un pays pour voir les histoires qu’on y a trouvées.</p>
+  </div>
+  <div class="carte-bloc">
+    <svg class="mappemonde" viewBox="0 0 1000 470" role="img" aria-label="Carte du monde des contes">
+      <defs>
+        <linearGradient id="mer" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--mer-haut)"/><stop offset="1" stop-color="var(--mer-bas)"/>
+        </linearGradient>
+        <linearGradient id="sol" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--terre-haut)"/><stop offset="1" stop-color="var(--terre-bas)"/>
+        </linearGradient>
+      </defs>
+      <rect class="mer" x="0" y="0" width="1000" height="470" rx="20"/>
+      <g class="vagues"><path class="vague" d="M331 90 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M76 242 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M56 211 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M87 65 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M428 378 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M139 121 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M622 430 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M957 46 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M158 76 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M316 374 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M193 274 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M77 114 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M673 208 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M322 275 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M455 154 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M783 324 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M254 271 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M524 399 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M720 149 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M961 76 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M421 349 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M166 234 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M58 311 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M754 270 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M687 279 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M826 428 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M475 309 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M78 325 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M641 449 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M809 147 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M390 311 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M42 223 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M181 76 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M77 353 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M144 131 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M395 397 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M97 217 q 6 -4 12 0 q 6 4 12 0"/><path class="vague" d="M547 402 q 6 -4 12 0 q 6 4 12 0"/></g>
+      <g class="terres">
+      <path class="terre" d="M33.3 20.0 C40.9 8.7 25.2 7.9 61.1 3.3 C97.0 -1.2 93.6 4.4 138.9 6.7 C184.2 8.9 161.4 10.0 194.4 10.0 C227.5 10.0 209.7 11.2 236.1 6.7 C262.6 2.1 241.1 -5.6 272.2 -3.3 C303.4 -1.1 303.2 -10.5 327.8 13.3 C352.3 37.1 348.2 40.6 344.4 66.7 C340.7 92.7 329.9 78.7 316.7 90.0 C303.4 101.3 313.1 89.8 305.6 100.0 C298.0 110.2 304.8 100.7 294.4 120.0 C284.1 139.3 290.1 148.7 275.0 156.7 C259.9 164.6 265.1 144.5 250.0 143.3 C234.9 142.2 244.7 143.1 230.6 153.3 C216.4 163.5 206.4 162.0 208.3 173.3 C210.2 184.7 220.1 182.1 236.1 186.7 C252.2 191.2 244.2 178.7 255.6 186.7 C266.9 194.6 273.2 207.7 269.4 210.0 C265.7 212.3 260.5 202.4 244.4 193.3 C228.4 184.3 239.2 194.7 222.2 183.3 C205.2 172.0 207.7 175.9 194.4 160.0 C181.2 144.1 196.6 154.8 183.3 136.7 C170.1 118.5 165.0 125.9 155.6 106.7 C146.1 87.4 162.2 94.7 155.6 80.0 C148.9 65.3 152.2 76.9 136.1 63.3 C120.1 49.7 131.0 45.7 108.3 40.0 C85.7 34.3 93.1 47.8 69.4 46.7 C45.8 45.5 51.2 45.7 38.9 36.7 C26.6 27.6 25.8 31.3 33.3 20.0Z"/>
+      <path class="terre" d="M275.0 213.3 C276.9 205.4 277.5 206.7 291.7 203.3 C305.8 199.9 302.5 199.9 316.7 203.3 C330.8 206.7 319.2 205.4 333.3 213.3 C347.5 221.3 343.2 215.3 358.3 226.7 C373.4 238.0 362.7 235.3 377.8 246.7 C392.9 258.0 397.1 247.5 402.8 260.0 C408.4 272.5 398.2 269.7 394.4 283.3 C390.7 296.9 401.1 286.4 391.7 300.0 C382.2 313.6 380.8 305.2 366.7 323.3 C352.5 341.5 358.5 337.5 350.0 353.3 C341.5 369.2 349.2 362.1 341.7 370.0 C334.1 377.9 335.3 369.9 327.8 376.7 C320.2 383.5 325.1 377.5 319.4 390.0 C313.8 402.5 319.6 404.3 311.1 413.3 C302.6 422.4 298.2 424.6 294.4 416.7 C290.7 408.7 299.1 408.1 300.0 390.0 C300.9 371.9 296.3 380.3 297.2 363.3 C298.2 346.3 299.9 359.3 302.8 340.0 C305.6 320.7 309.3 324.8 305.6 306.7 C301.8 288.5 301.1 302.5 291.7 286.7 C282.2 270.8 281.6 275.9 277.8 260.0 C274.0 244.1 277.7 251.3 280.6 240.0 C283.4 228.7 288.0 235.7 286.1 226.7 C284.2 217.6 273.1 221.3 275.0 213.3Z"/>
+      <path class="terre" d="M472.2 120.0 C469.4 113.2 467.4 110.3 475.0 96.7 C482.6 83.1 484.1 89.1 494.4 80.0 C504.8 70.9 497.1 75.7 505.6 70.0 C514.1 64.3 512.8 70.1 519.4 63.3 C526.1 56.5 521.2 56.8 525.0 50.0 C528.8 43.2 522.1 45.6 530.6 43.3 C539.1 41.1 540.6 51.3 550.0 43.3 C559.4 35.4 551.7 33.6 558.3 20.0 C564.9 6.4 557.2 7.9 569.4 3.3 C581.7 -1.2 576.5 3.3 594.4 6.7 C612.4 10.1 597.7 13.3 622.2 13.3 C646.8 13.3 644.0 6.7 666.7 6.7 C689.3 6.7 683.2 2.0 688.9 13.3 C694.6 24.7 692.8 24.1 683.3 40.0 C673.9 55.9 676.2 44.1 661.1 60.0 C646.0 75.9 654.0 74.2 638.9 86.7 C623.8 99.1 629.9 95.5 616.7 96.7 C603.4 97.8 613.2 87.7 600.0 90.0 C586.8 92.3 590.1 97.7 577.8 103.3 C565.5 109.0 573.3 105.5 563.9 106.7 C554.4 107.8 557.6 104.4 550.0 106.7 C542.4 108.9 547.3 119.0 541.7 113.3 C536.0 107.7 540.9 96.8 533.3 90.0 C525.8 83.2 530.8 91.1 519.4 93.3 C508.1 95.6 512.3 88.7 500.0 96.7 C487.7 104.6 492.8 108.7 483.3 116.7 C473.9 124.6 475.1 126.8 472.2 120.0Z"/>
+      <path class="terre" d="M452.8 190.0 C449.9 175.3 451.8 181.4 455.6 166.7 C459.3 151.9 454.4 162.5 463.9 146.7 C473.3 130.8 461.6 130.2 483.3 120.0 C505.1 109.8 503.2 113.3 527.8 116.7 C552.3 120.1 534.8 123.2 555.6 130.0 C576.3 136.8 575.7 131.0 588.9 136.7 C602.1 142.3 589.7 136.5 594.4 146.7 C599.2 156.9 594.3 148.5 602.8 166.7 C611.3 184.8 606.2 188.7 619.4 200.0 C632.7 211.3 640.7 188.7 641.7 200.0 C642.6 211.3 632.6 215.2 622.2 233.3 C611.8 251.5 614.9 232.9 611.1 253.3 C607.3 273.7 615.8 270.7 611.1 293.3 C606.4 316.0 608.6 299.6 597.2 320.0 C585.9 340.4 593.8 342.0 577.8 353.3 C561.7 364.7 562.3 360.1 550.0 353.3 C537.7 346.5 547.3 351.5 541.7 333.3 C536.0 315.2 535.2 326.1 533.3 300.0 C531.4 273.9 538.9 281.6 536.1 256.7 C533.3 231.7 539.2 238.0 525.0 226.7 C510.8 215.3 510.5 224.5 494.4 223.3 C478.4 222.2 488.2 227.9 477.8 223.3 C467.4 218.8 472.4 221.3 463.9 210.0 C455.4 198.7 455.6 204.7 452.8 190.0Z"/>
+      <path class="terre" d="M572.2 106.7 C575.1 113.5 582.2 112.1 591.7 120.0 C601.1 127.9 589.6 132.3 600.0 130.0 C610.4 127.7 610.9 109.9 622.2 113.3 C633.6 116.7 622.0 127.5 633.3 140.0 C644.7 152.5 644.2 144.3 655.6 150.0 C666.9 155.7 656.3 154.4 666.7 156.7 C677.1 158.9 674.8 149.9 686.1 156.7 C697.4 163.5 690.6 157.4 700.0 176.7 C709.4 195.9 706.3 203.1 713.9 213.3 C721.4 223.5 711.8 221.4 722.2 206.7 C732.6 191.9 731.2 177.9 744.4 170.0 C757.7 162.1 751.7 168.6 761.1 183.3 C770.6 198.1 762.8 195.2 772.2 213.3 C781.7 231.5 778.5 242.3 788.9 236.7 C799.3 231.0 801.8 219.3 802.8 196.7 C803.7 174.0 790.7 179.1 791.7 170.0 C792.6 160.9 794.2 173.4 805.6 170.0 C816.9 166.6 813.7 171.3 825.0 160.0 C836.3 148.7 829.4 153.7 838.9 136.7 C848.3 119.7 845.2 123.6 852.8 110.0 C860.3 96.4 853.6 106.9 861.1 96.7 C868.7 86.5 863.7 92.5 875.0 80.0 C886.3 67.5 875.6 72.5 894.4 60.0 C913.3 47.5 913.6 60.3 930.6 43.3 C947.6 26.3 958.6 25.9 944.4 10.0 C930.3 -5.9 926.7 2.3 888.9 -3.3 C851.1 -9.0 871.1 -3.3 833.3 -6.7 C795.6 -10.1 815.6 -13.3 777.8 -13.3 C740.0 -13.3 752.4 -14.6 722.2 -6.7 C692.0 1.3 707.8 5.5 688.9 10.0 C670.0 14.5 683.7 4.4 666.7 6.7 C649.7 8.9 654.0 14.4 638.9 16.7 C623.8 18.9 629.8 0.9 622.2 13.3 C614.7 25.8 612.9 29.5 616.7 53.3 C620.4 77.1 623.9 69.7 633.3 83.3 C642.8 96.9 642.6 85.4 644.4 93.3 C646.3 101.3 645.5 102.1 638.9 106.7 C632.3 111.2 636.3 107.8 625.0 106.7 C613.7 105.5 619.7 105.6 605.6 103.3 C591.4 101.1 594.7 98.9 583.3 100.0 C572.0 101.1 569.4 99.9 572.2 106.7Z"/>
+      <path class="terre" d="M816.7 313.3 C808.2 325.8 812.0 318.6 813.9 333.3 C815.8 348.1 809.9 352.1 822.2 356.7 C834.5 361.2 835.8 350.1 850.0 346.7 C864.2 343.3 852.6 343.3 863.9 346.7 C875.2 350.1 869.2 348.7 883.3 356.7 C897.5 364.6 894.2 367.7 905.6 370.0 C916.9 372.3 910.1 375.8 916.7 363.3 C923.3 350.9 928.8 353.7 925.0 333.3 C921.2 312.9 915.9 322.6 905.6 303.3 C895.2 284.1 903.9 284.6 894.4 276.7 C885.0 268.7 889.1 278.9 877.8 280.0 C866.4 281.1 874.3 274.3 861.1 280.0 C847.9 285.7 854.0 285.3 838.9 296.7 C823.8 308.0 825.2 300.9 816.7 313.3Z"/>
+      </g>
+      <path class="route" d="M219 163 L494 63 L506 87 L540 64 L625 47 L578 78 L625 140 L556 233 L883 117"/>
+      <g class="rose" transform="translate(112 392)">
+      <circle r="31" class="rose-fond"/><circle r="22" class="rose-cercle"/>
+      <path d="M0 -29 L6 0 L0 29 L-6 0Z" class="rose-n"/>
+      <path d="M-29 0 L0 -6 L29 0 L0 6Z" class="rose-e"/>
+      <path d="M0 -29 L6 0 L0 0Z" class="rose-pointe"/>
+      <text y="-34" text-anchor="middle" class="rose-txt">N</text></g><g class="deco-bateau" transform="translate(302 404) scale(1.1)">
+      <path d="M-20 0 h40 l-6 11 h-28Z" class="coque"/>
+      <path d="M0 -2 v-26" class="mat"/>
+      <path d="M2 -26 l 17 20 h-17Z" class="voile"/>
+      <path d="M-2 -22 l -13 16 h13Z" class="voile2"/></g><g class="deco-baleine" transform="translate(704 420) scale(1.08)">
+      <path d="M-28 0 C-20 -13 8 -16 20 -7 C28 -1 28 5 20 8 C4 14 -18 11 -28 0Z" class="corps"/>
+      <path d="M20 -7 l 15 -13 l -3 17Z" class="queue"/>
+      <circle cx="-14" cy="-3" r="2" class="oeil"/>
+      <path d="M-6 -14 q 4 -12 10 -15" class="jet"/></g>
+      <g class="etape" data-pays="mexique" tabindex="0" role="button" aria-label="Mexique">
+        <ellipse class="socle" cx="219" cy="163" rx="26" ry="7"/>
+        <g class="mon" transform="translate(219 163) scale(0.78)"><path d="M-24 0 L-16 -13 h32 L24 0Z" fill="#d8b45e"/>
+  <path d="M-16 -13 L-9 -24 h18 L16 -13Z" fill="#e8c87a"/>
+  <path d="M-9 -24 L-4 -32 h8 L9 -24Z" fill="#d8b45e"/>
+  <path d="M-4 -32 h8 v-5 h-8Z" fill="#c49a62"/>
+  <path d="M-16 -13 h32 M-9 -24 h18" stroke="#b89a4e" stroke-width="1.6"/>
+  <rect x="30" y="-26" width="9" height="26" rx="4.5" fill="#4e9168"/>
+  <path d="M30 -17 h-7 a4 4 0 0 0 -4 4 v7" stroke="#4e9168" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M39 -20 h6 a4 4 0 0 1 4 4 v6" stroke="#4e9168" stroke-width="5.4" fill="none" stroke-linecap="round"/>
+  <circle cx="34.5" cy="-29" r="3" fill="#ff6f9c"/></g>
+        <text class="pin-nom" x="219" y="180" text-anchor="middle">Mexique</text>
+      </g>
+      <g class="etape" data-pays="angleterre" tabindex="0" role="button" aria-label="Angleterre">
+        <ellipse class="socle" cx="489" cy="57" rx="26" ry="7"/>
+        <g class="mon" transform="translate(489 57) scale(0.72)"><rect x="-9" y="-34" width="18" height="34" rx="2" fill="#d8c08a"/>
+  <rect x="-11" y="-44" width="22" height="12" rx="2" fill="#c4a96e"/>
+  <circle cy="-38" r="6.4" fill="#fff8e6" stroke="#9a7f4e" stroke-width="1.6"/>
+  <path d="M0 -38 v-3.4 M0 -38 h2.6" stroke="#5c4a2e" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M-11 -44 L0 -58 L11 -44Z" fill="#8a9a6e"/>
+  <path d="M-9 -4 h18" stroke="#b09868" stroke-width="2"/></g>
+        <text class="pin-nom" x="489" y="13" text-anchor="middle">Angleterre</text>
+      </g>
+      <g class="etape" data-pays="france" tabindex="0" role="button" aria-label="France">
+        <ellipse class="socle" cx="508" cy="90" rx="26" ry="7"/>
+        <g class="mon" transform="translate(508 90) scale(0.72)"><path d="M-17 0 L-6 -26 h12 L17 0Z" fill="#b08a52"/>
+  <path d="M-11 -14 h22 M-8 -22 h16" stroke="#8a6a3c" stroke-width="2"/>
+  <path d="M-6 -26 L-3 -46 h6 L6 -26Z" fill="#c49a62"/>
+  <path d="M-3 -46 L0 -58 L3 -46Z" fill="#b08a52"/>
+  <circle cy="-60" r="2.4" fill="#f4a935"/></g>
+        <text class="pin-nom" x="508" y="107" text-anchor="middle">France</text>
+      </g>
+      <g class="etape" data-pays="russie" tabindex="0" role="button" aria-label="Russie">
+        <ellipse class="socle" cx="633" cy="40" rx="26" ry="7"/>
+        <g class="mon" transform="translate(633 40) scale(0.72)"><rect x="-18" y="-22" width="36" height="22" rx="2" fill="#e8dcc4"/>
+  <path d="M-18 -22 h36" stroke="#c9b894" stroke-width="2"/>
+  <rect x="-5" y="-40" width="10" height="18" fill="#e8dcc4"/>
+  <path d="M0 -58 C8 -52 8 -44 0 -40 C-8 -44 -8 -52 0 -58Z" fill="#e05048"/>
+  <path d="M-16 -36 C-10 -31 -10 -25 -16 -22 C-22 -25 -22 -31 -16 -36Z" fill="#39a0d3"/>
+  <path d="M16 -36 C22 -31 22 -25 16 -22 C10 -25 10 -31 16 -36Z" fill="#5cc27a"/>
+  <path d="M0 -58 v-5 M-16 -36 v-4 M16 -36 v-4" stroke="#f4a935" stroke-width="2" stroke-linecap="round"/></g>
+        <text class="pin-nom" x="633" y="-4" text-anchor="middle">Russie</text>
+      </g>
+      <g class="etape" data-pays="ukraine" tabindex="0" role="button" aria-label="Ukraine">
+        <ellipse class="socle" cx="578" cy="78" rx="26" ry="7"/>
+        <g class="mon" transform="translate(578 78) scale(0.72)"><path d="M-24 -26 C-26 -12 -22 0 -4 0 C14 0 24 -8 22 -20 C21 -30 14 -33 7 -32 C9 -40 6 -45 1 -44 C-4 -43 -5 -38 -4 -32Z" fill="#e0393e"/>
+  <path d="M-12 -18 l3 -3 l3 3 l-3 3Z M-2 -18 l3 -3 l3 3 l-3 3Z M8 -18 l3 -3 l3 3 l-3 3Z" fill="#ffc93c"/>
+  <ellipse cx="-24" cy="-14" rx="6" ry="13" fill="#fffaf4"/>
+  <path d="M30 0 L38 -16 L46 0Z" fill="#2f7d5b"/><path d="M33 -8 L38 -20 L43 -8Z" fill="#3f9a70"/>
+  <circle cx="-30" cy="-36" r="2" fill="#ffffff"/><circle cx="16" cy="-42" r="1.6" fill="#ffffff"/></g>
+        <text class="pin-nom" x="578" y="95" text-anchor="middle">Ukraine</text>
+      </g>
+      <g class="etape" data-pays="allemagne" tabindex="0" role="button" aria-label="Allemagne">
+        <ellipse class="socle" cx="540" cy="64" rx="26" ry="7"/>
+        <g class="mon" transform="translate(540 64) scale(0.72)"><rect x="-20" y="-34" width="40" height="34" fill="#fff6e4"/>
+  <path d="M-20 -34 V0 M20 -34 V0 M0 -34 V0 M-20 -17 H20 M-20 -34 L 0 -17 M20 -34 L 0 -17" stroke="#7a4b31" stroke-width="3" fill="none"/>
+  <path d="M-26 -32 L 0 -58 L 26 -32Z" fill="#d9533f"/>
+  <rect x="-6" y="-12" width="12" height="12" rx="5" fill="#6f4a33"/>
+  <text x="28" y="-40" font-size="18" font-weight="700" fill="#6b4aa0">♪</text>
+  <path d="M-36 0 l 0 -14 l 6 0 l 0 14Z" fill="#2f7d5b"/></g>
+        <text class="pin-nom" x="540" y="81" text-anchor="middle">Allemagne</text>
+      </g>
+      <g class="etape" data-pays="orient" tabindex="0" role="button" aria-label="Orient">
+        <ellipse class="socle" cx="625" cy="147" rx="26" ry="7"/>
+        <g class="mon" transform="translate(625 147) scale(0.7)"><rect x="-20" y="-20" width="40" height="20" rx="2" fill="#e8d2a8"/>
+  <path d="M-13 -20 C-13 -36 13 -36 13 -20Z" fill="#6b4aa0"/>
+  <path d="M0 -36 v-7" stroke="#f4a935" stroke-width="2.4" stroke-linecap="round"/>
+  <rect x="-24" y="-34" width="7" height="34" rx="3" fill="#e8d2a8"/>
+  <path d="M-20.5 -34 C-20.5 -43 -20.5 -43 -20.5 -44" stroke="#6b4aa0" stroke-width="7" stroke-linecap="round"/>
+  <rect x="17" y="-30" width="7" height="30" rx="3" fill="#e8d2a8"/>
+  <path d="M20.5 -30 C20.5 -38 20.5 -38 20.5 -39" stroke="#6b4aa0" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="-5" cy="-11" r="4" fill="#f4a935"/></g>
+        <text class="pin-nom" x="625" y="164" text-anchor="middle">Orient</text>
+      </g>
+      <g class="etape" data-pays="afrique" tabindex="0" role="button" aria-label="Afrique">
+        <ellipse class="socle" cx="556" cy="233" rx="26" ry="7"/>
+        <g class="mon" transform="translate(556 233) scale(0.74)"><path d="M-5 0 C-8 -16 -9 -26 -6 -34 L6 -34 C9 -26 8 -16 5 0Z" fill="#a9743f"/>
+  <path d="M-6 -30 C-18 -34 -28 -40 -34 -40" stroke="#a9743f" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M6 -32 C18 -37 28 -43 34 -43" stroke="#a9743f" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+  <ellipse cy="-46" rx="34" ry="10" fill="#6f9840"/>
+  <ellipse cx="-22" cy="-42" rx="14" ry="6" fill="#6f9840"/>
+  <ellipse cx="23" cy="-43" rx="15" ry="6.4" fill="#6f9840"/>
+  <ellipse cx="-6" cy="-52" rx="20" ry="6" fill="#7dab49"/></g>
+        <text class="pin-nom" x="556" y="250" text-anchor="middle">Afrique</text>
+      </g>
+      <g class="etape" data-pays="japon" tabindex="0" role="button" aria-label="Japon">
+        <ellipse class="socle" cx="889" cy="113" rx="26" ry="7"/>
+        <g class="mon" transform="translate(889 113) scale(0.74)"><path d="M-30 0 L0 -44 L30 0Z" fill="#93a9da"/>
+  <path d="M-11 -16 L0 -44 L11 -16 C6 -21 -6 -21 -11 -16Z" fill="#ffffff"/>
+  <path d="M-21 -4 h42" stroke="#e8553e" stroke-width="3.4"/>
+  <path d="M-23 -9 h46" stroke="#e8553e" stroke-width="3"/>
+  <path d="M-17 -9 v12 M17 -9 v12" stroke="#e8553e" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="-26" cy="-26" r="3.6" fill="#ffb7c9"/><circle cx="27" cy="-31" r="3.2" fill="#ffb7c9"/></g>
+        <text class="pin-nom" x="889" y="130" text-anchor="middle">Japon</text>
+      </g>
+    </svg>
+    <div class="carte-panneau" id="cartePanneau">
+      <p class="carte-vide">Choisis un pays sur la carte.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="ecouter"><div class="enveloppe">
+  <div class="chapeau">
+    <h2>Les dix contes à la suite</h2>
+    <p>Pour le goûter, un moment calme ou l’histoire du soir. Lance la playlist et laisse-la
+       tourner : les contes s’enchaînent tout seuls, il n’y a rien à toucher.</p>
+  </div>
+  <div class="lecteur">
+    <div class="lecteur-tete">
+      <div class="lecteur-info">
+        <span class="lecteur-nom">Toutes les chansons</span>
+        <span class="lecteur-meta">11 titres · 39 min</span>
+      </div>
+      <a class="bouton plein" href="https://www.youtube.com/playlist?list=PLV44KZQSYE18"
+         target="_blank" rel="noopener">▶ Tout écouter à la suite</a>
+    </div>
+    <div class="pistes">
+      <a class="piste" href="https://www.youtube.com/watch?v=d-t388csBQU" target="_blank" rel="noopener">
+        <span class="num">1</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Le Gros Navet</strong><span class="piste-pays">🇷🇺 Russie</span></span>
+        <span class="piste-duree">3:23</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=kskZ5nRgGKg" target="_blank" rel="noopener">
+        <span class="num">2</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Boucle d’Or et les 3 Ours</strong><span class="piste-pays">🇬🇧 Angleterre</span></span>
+        <span class="piste-duree">3:53</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=nTGKD74wGHg" target="_blank" rel="noopener">
+        <span class="num">3</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Les 3 Petits Cochons</strong><span class="piste-pays">🇬🇧 Angleterre</span></span>
+        <span class="piste-duree">2:52</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=7CNSGU8BHzg" target="_blank" rel="noopener">
+        <span class="num">4</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Le Petit Chaperon Rouge</strong><span class="piste-pays">🇫🇷 France</span></span>
+        <span class="piste-duree">4:08</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=NWDaIbtV9AQ" target="_blank" rel="noopener">
+        <span class="num">5</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Aladin et la lampe magique</strong><span class="piste-pays">🪔 Orient</span></span>
+        <span class="piste-duree">3:46</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=DBZydRBrzCg" target="_blank" rel="noopener">
+        <span class="num">6</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Le Lion et la Souris</strong><span class="piste-pays">🌍 Afrique</span></span>
+        <span class="piste-duree">3:17</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=YGblkgriYn4" target="_blank" rel="noopener">
+        <span class="num">7</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Momotaro</strong><span class="piste-pays">🇯🇵 Japon</span></span>
+        <span class="piste-duree">3:45</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=UttOMVnN0n0" target="_blank" rel="noopener">
+        <span class="num">8</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Le Coq Kiriko</strong><span class="piste-pays">🇲🇽 Mexique</span></span>
+        <span class="piste-duree">3:46</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=4Ugk8kDblBs" target="_blank" rel="noopener">
+        <span class="num">9</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>La Moufle</strong><span class="piste-pays">🇺🇦 Ukraine</span></span>
+        <span class="piste-duree">3:49</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=VQPpux1qeiI" target="_blank" rel="noopener">
+        <span class="num">10</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Les Musiciens de Brême</strong><span class="piste-pays">🇩🇪 Allemagne</span></span>
+        <span class="piste-duree">3:37</span>
+      </a>
+      <a class="piste" href="https://www.youtube.com/watch?v=noT9lfaNmBg" target="_blank" rel="noopener">
+        <span class="num">11</span>
+        <span class="lire" aria-hidden="true">▶</span>
+        <span class="piste-txt"><strong>Youpi, c’est la rentrée !</strong><span class="piste-pays">🎒 Chanson</span></span>
+        <span class="piste-duree">2:05</span>
+      </a>
+    </div>
+    <p class="lecteur-note">Chaque titre ouvre son épisode sur YouTube, et la playlist enchaîne
+       le suivant toute seule.</p>
+  </div>
+</div></section>
+
+<section id="livre"><div class="enveloppe">
+  <div class="chapeau">
+    <h2>Le livre des contes</h2>
+    <p>Les dix contes à lire à voix haute, et les chansons à reprendre en chœur — avec une image
+       différente à chaque page.</p>
+  </div>
+  <div class="choix" id="choix" role="group" aria-label="Choisir un conte"></div>
+  <div class="livre">
+    <div class="entete-livre">
+      <div><span class="origine" id="origine"></span></div>
+      <div class="bascule" role="group" aria-label="Choisir la lecture">
+        <button id="modeProse" type="button" aria-pressed="true">L’histoire</button>
+        <button id="modeChanson" type="button" aria-pressed="false">La chanson</button>
+      </div>
+    </div>
+    <div class="couverture" id="couverture">
+      <img class="fond" id="couvFond" src="" alt="">
+      <div class="voile"></div><div class="cadre"></div>
+      <div class="couv-contenu">
+        <span class="couv-pastille"><span class="dr" id="couvDr"></span><span id="couvPays"></span></span>
+        <h3 id="couvTitre"></h3>
+        <p class="couv-accroche" id="couvAccroche"></p>
+        <p class="couv-origine" id="couvOrigine"></p>
+        <button class="couv-ouvrir" id="couvOuvrir" type="button">Il était une fois…</button>
+      </div>
+    </div>
+    <div class="pages" id="pages">
+      <div class="page illustration"><img id="illu" src="" alt=""></div>
+      <div class="page" id="texte"></div>
+    </div>
+    <div class="feuilleter">
+      <button id="prec" aria-label="Page précédente">‹</button>
+      <button id="suiv" aria-label="Page suivante">›</button>
+      <span class="compte" id="compte"></span>
+      <a class="lien" id="versVideo" href="#" target="_blank" rel="noopener">▶ Voir l’épisode en vidéo</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="cahiers"><div class="enveloppe">
+  <div class="chapeau">
+    <h2>Les cahiers de coloriage</h2>
+    <p>Les héros des dessins animés, à colorier avec ses feutres. Après l’épisode, l’enfant retrouve
+       Bulle, Pistache et tous leurs amis des contes — et il raconte l’histoire en coloriant.</p>
+  </div>
+  <ul class="cahiers-atouts">
+    <li>🖍️ Un grand dessin par page, de gros traits ronds : dès 2 ans</li>
+    <li>📄 Imprimé au recto seulement : les feutres ne traversent pas</li>
+    <li>📱 Des codes QR pour regarder chaque histoire en chanson</li>
+    <li>✏️ « Ce cahier appartient à » et une page pour dessiner son héros</li>
+    <li>📐 Grand format 21,6 × 27,9 cm</li>
+  </ul>
+  <div class="cahiers">
+      <article class="cahier" data-tome="1" data-etat="dispo">
+        <div class="cahier-couv"><img src="/img/7ff98b7ee4c169.jpg" alt="Couverture du cahier de coloriage Bulle &amp; Pistache, tome 1 : Il était une fois en Europe" loading="lazy">
+          <span class="cahier-prix">6,99 €</span></div>
+        <div class="cahier-txt">
+          <span class="cahier-tome">Tome 1 · 13 grands dessins</span>
+          <h3>Il était une fois en Europe</h3>
+          <p>Le Gros Navet, Boucle d’Or et toute la famille Ours, le Petit Chaperon Rouge, les 3 Petits Cochons et le grand loup.</p>
+          <div class="cahier-pages"><img src="/img/9b68f68367d1ad.jpg" alt="" loading="lazy"><img src="/img/268ff247beaaf9.jpg" alt="" loading="lazy"><img src="/img/d2a3ec5d27cfd3.jpg" alt="" loading="lazy"><img src="/img/ce4daf5b8b589f.jpg" alt="" loading="lazy"></div>
+          <div class="cahier-acheter"><a class="bouton plein" href="https://www.amazon.fr/dp/B0HQ1B8VD7" target="_blank" rel="noopener">Acheter sur Amazon</a><span class="cahier-note">Disponible · livré par Amazon</span></div>
+        </div>
+      </article>
+      <article class="cahier" data-tome="2" data-etat="dispo">
+        <div class="cahier-couv"><img src="/img/61ca67abbec633.jpg" alt="Couverture du cahier de coloriage Bulle &amp; Pistache, tome 2 : Le tour du monde" loading="lazy">
+          <span class="cahier-prix">6,99 €</span></div>
+        <div class="cahier-txt">
+          <span class="cahier-tome">Tome 2 · 19 grands dessins</span>
+          <h3>Le tour du monde</h3>
+          <p>Le génie et sa lampe magique, le lion et la petite souris, Momotaro et ses amis du Japon, l’oni gentil et Kiriko le coq.</p>
+          <div class="cahier-pages"><img src="/img/e27f0647655696.jpg" alt="" loading="lazy"><img src="/img/d3d777a511a603.jpg" alt="" loading="lazy"><img src="/img/3bb0eed0ff35fd.jpg" alt="" loading="lazy"><img src="/img/92a341e8e1ade9.jpg" alt="" loading="lazy"></div>
+          <div class="cahier-acheter"><a class="bouton plein" href="https://www.amazon.fr/dp/B0HQ1BNSH4" target="_blank" rel="noopener">Acheter sur Amazon</a><span class="cahier-note">Disponible · livré par Amazon</span></div>
+        </div>
+      </article>
+      <article class="cahier" data-tome="3" data-etat="dispo">
+        <div class="cahier-couv"><img src="/img/e10f394ee57bc6.jpg" alt="Couverture du cahier de coloriage Bulle &amp; Pistache, tome 3 : Joyeux Noël !" loading="lazy">
+          <span class="cahier-prix">6,99 €</span></div>
+        <div class="cahier-txt">
+          <span class="cahier-tome">Tome 3 · 22 grands dessins</span>
+          <h3>Joyeux Noël !</h3>
+          <p>Bulle et Pistache en bonnet, le sapin, la famille Ours, le singe qui attrape les flocons, le traîneau et le Père Noël.</p>
+          <div class="cahier-pages"><img src="/img/fc60669441d790.jpg" alt="" loading="lazy"><img src="/img/d99df94fcc9b8f.jpg" alt="" loading="lazy"><img src="/img/e19d336c1ebbee.jpg" alt="" loading="lazy"><img src="/img/5d4c3ce0637837.jpg" alt="" loading="lazy"></div>
+          <div class="cahier-acheter"><a class="bouton plein" href="https://www.amazon.fr/dp/B0HQ7LBNW5" target="_blank" rel="noopener">Acheter sur Amazon</a><span class="cahier-note">Disponible · idéal pour Noël</span></div>
+        </div>
+      </article>
+  </div>
+  <p class="cahiers-bas">Livres brochés imprimés et livrés par Amazon, 6,99 € chacun. Une idée de petit cadeau
+     pour un anniversaire, le calendrier de l’Avent ou à glisser sous le sapin.</p>
+</div></section>
+
+<section id="eux"><div class="enveloppe">
+  <div class="chapeau">
+    <h2>Faire le tour du monde avant d’avoir cinq ans</h2>
+  </div>
+  <div class="manifeste">
+    <div class="manifeste-txt">
+      <p class="grand">Il existe des contes magnifiques dans chaque pays du monde.
+        La plupart des enfants d’ici n’en connaîtront jamais qu’une poignée.</p>
+      <p>Le Gros Navet vient de Russie, Momotaro du Japon, Kiriko du Mexique, La Moufle d’Ukraine, Les Musiciens de Brême d’Allemagne, Le Lion et la Souris
+        d’Afrique. Ce sont des histoires que des grands-mères racontent depuis des siècles,
+        à des milliers de kilomètres d’ici — et elles disent toutes à peu près la même chose :
+        qu’on a besoin les uns des autres.</p>
+      <p>Alors on va les chercher. Un pays par épisode, une chanson à reprendre en chœur,
+        et des couleurs assez joyeuses pour qu’un enfant de deux ans ait envie de rester.
+        Une nouvelle histoire chaque semaine.</p>
+      <p class="signe">Et pour emmener les petits là-bas, il fallait deux guides.</p>
+    </div>
+    <div class="manifeste-chiffres">
+      <div class="mc"><b>10</b><span>contes<br>du monde</span></div>
+      <div class="mc"><b>9</b><span>pays<br>visités</span></div>
+      <div class="mc"><b>2–5</b><span>ans,<br>et leurs parents</span></div>
+    </div>
+  </div>
+  <div class="stars">
+      <div class="star">
+        <div class="star-img"><img src="/img/02d1a053de4d04.png" alt="Bulle" loading="lazy"></div>
+        <div class="star-txt"><span class="role">La curieuse</span>
+          <h3>Bulle</h3><span class="ou">Petite chienne · Toutes les histoires</span>
+          <p>Une petite chienne douce, qui pose toutes les questions et veut tout comprendre. C’est elle qui s’approche quand quelqu’un a du chagrin, et qui pose sa patte sur l’épaule sans rien dire — comme elle le fait pour Kiriko, au bord du chemin.</p></div></div>
+      <div class="star">
+        <div class="star-img"><img src="/img/deb04de6d3c127.png" alt="Pistache" loading="lazy"></div>
+        <div class="star-txt"><span class="role">Le globe-trotteur</span>
+          <h3>Pistache</h3><span class="ou">Perroquet · Toutes les histoires</span>
+          <p>Un perroquet qui a déjà tout survolé. Il connaît le chemin de chaque pays, repère ce qu’il ne faut pas manquer, et souffle à l’oreille quand il faut lever les yeux. Sans lui, Kiriko n’aurait jamais pensé à demander au soleil.</p></div></div>
+  </div>
+</div></section>
+
+<section id="personnages"><div class="enveloppe">
+  <div class="chapeau">
+    <h2>Les personnages des contes</h2>
+    <p>Un âne qui rêve d’être musicien, une fourmi qui fait tout craquer, un coq qui va au mariage, un garçon né d’une pêche, un loup qui perd toujours.
+       Pour les retrouver d’une histoire à l’autre, et les reconnaître avant de les avoir vus.</p>
+  </div>
+  <div class="galerie">
+      <div class="fiche">
+        <div class="vign"><img src="/img/ffee05e4cc462a.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">Le chef d’orchestre</span><h3>L’Âne de Brême</h3>
+          <span class="ou">Allemagne</span><p>Un vieil âne gris aux grandes oreilles, avec son foulard rouge. Trop vieux pour porter les sacs ? Tant pis ! Il fait son baluchon et part à Brême pour devenir musicien… et en chemin, il se fait trois amis.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/21674e4857ec46.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">La plus jolie voix</span><h3>Le Chat musicien</h3>
+          <span class="ou">Allemagne</span><p>Un chat gris tout tigré qui miaulait tristement sur son petit mur : il n’attrapait plus les souris. Mais quand il chante avec ses amis, perché sur le dos du chien, c’est le plus beau des miaous !</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/eeece80a32669e.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">La toute petite</span><h3>La Fourmi</h3>
+          <span class="ou">Ukraine</span><p>La plus petite de la forêt, avec de grands yeux et des antennes qui bougent tout le temps. Elle demande poliment une toute petite place dans la moufle… et il suffit d’une seule de ses pattes pour que tout fasse CRAAAC !</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/4ccb61edb516fe.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">Le gros frileux</span><h3>Le gros Ours</h3>
+          <span class="ou">Ukraine</span><p>Quand il arrive, la terre fait boum, boum, boum. Il est énorme, il a froid comme tout le monde, et il porte une grande écharpe rouge. On lui dit que c’est trop petit… mais on lui fait quand même une place.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/5b9d48309a29bf.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">Le coq en habit</span><h3>Kiriko</h3>
+          <span class="ou">Mexique</span><p>Un coq très fier de ses plumes, qui part au mariage de son oncle avec un nœud papillon. Il apprend ce jour-là qu’on ne s’en sort pas toujours tout seul — et qu’il faut parfois oser demander, même au soleil.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/081a8547a11227.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">Le garçon de la pêche</span><h3>Momotaro</h3>
+          <span class="ou">Japon</span><p>Né dans une pêche géante trouvée sur la rivière. Il est fort, mais c’est surtout sa gentillesse qui fait sa force : il partage ses boulettes de riz avec tous ceux qu’il croise, et c’est comme ça qu’il se fait des amis.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/fb668e7c2d8c6b.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">Les ogres du Japon</span><h3>Les Oni</h3>
+          <span class="ou">Japon</span><p>Rouges ou bleus, avec des cornes et de gros sourcils, ils font « Grrr ! » quand on les regarde. Mais Momotaro découvre qu’ils ne sont pas vraiment méchants : ils sont surtout tristes d’être tout seuls sur leur île.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/4970a062d56c54.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">Le roi de la savane</span><h3>Le Lion</h3>
+          <span class="ou">Afrique</span><p>Le plus grand et le plus fort. Il rit quand une souris lui promet de l’aider un jour — et c’est pourtant elle qui viendra le délivrer. Depuis, il a cessé de rire des petits.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/0f95681d6d58e5.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">La plus petite</span><h3>La Souris</h3>
+          <span class="ou">Afrique</span><p>Si menue qu’on la tient dans une main. Elle n’a ni force ni crocs, mais elle a de bonnes dents et une mémoire fidèle : elle n’oublie jamais une promesse.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/40ffb75a1004e0.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">La trop curieuse</span><h3>Boucle d’Or</h3>
+          <span class="ou">Angleterre</span><p>Une petite fille aux cheveux dorés qui entre chez les gens sans frapper, goûte leur soupe et casse leurs chaises. Elle n’est pas méchante — juste très, très curieuse. Et elle sait demander pardon.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/79af063cb0208e.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">La porteuse de galettes</span><h3>Le Petit Chaperon Rouge</h3>
+          <span class="ou">France</span><p>On l’appelle ainsi à cause du chaperon de velours rouge que sa grand-mère lui a cousu. Elle est gentille et confiante — peut-être un peu trop. Elle apprend ce jour-là pourquoi on reste sur le chemin.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/c9048434155ed4.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">Le souffleur</span><h3>Le Loup</h3>
+          <span class="ou">France · Angleterre</span><p>Il revient dans deux contes, et il perd les deux fois. Il souffle sur les maisons, il se déguise en grand-mère — mais il finit toujours par s’en aller essoufflé. Chez Bulle & Pistache, le loup fait peur pour rire.</p></div></div>
+      <div class="fiche">
+        <div class="vign"><img src="/img/62d22363f67bc5.png" alt="" loading="lazy"></div>
+        <div class="fiche-txt"><span class="role">Les trois frères</span><h3>Les 3 Petits Cochons</h3>
+          <span class="ou">Angleterre</span><p>Deux sont pressés, le troisième est patient. Le premier fait sa maison en paille, le deuxième en bois, le troisième en briques — et c’est chez lui que tout le monde se retrouve quand le loup arrive.</p></div></div>
+  </div>
+</div></section>
+
+<section id="morales"><div class="enveloppe">
+  <div class="chapeau">
+    <h2>Ce que racontent les contes</h2>
+    <p>Chaque histoire laisse quelque chose. Voici ce que c’est, en mots simples —
+       et une question à poser à l’enfant quand le livre est refermé.</p>
+  </div>
+  <div class="morales">
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🇷🇺</span>Russie</span>
+        <h3>Le Gros Navet</h3>
+        <p class="m-phrase">« Même le plus petit peut tout changer. »</p>
+        <p class="m-expl">Grand-Père, Grand-Mère, la petite fille, Bulle et le chat tiraient déjà de toutes leurs forces. Il a suffi d’une souris de plus pour que le navet cède. Cela ne veut pas dire qu’elle était la plus forte : cela veut dire que c’est <em>tous ensemble</em> qu’ils ont réussi.</p>
+        <p class="m-q">Et toi, qu’est-ce que tu arrives à faire quand quelqu’un t’aide un peu ?</p>
+      </article>
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🇬🇧</span>Angleterre</span>
+        <h3>Boucle d’Or et les 3 Ours</h3>
+        <p class="m-phrase">« On frappe avant d’entrer — mais on peut toujours se faire pardonner. »</p>
+        <p class="m-expl">Boucle d’Or a fait une bêtise : elle est entrée chez des gens sans demander, elle a mangé leur soupe et cassé une chaise. Ce qui compte, c’est ce qu’elle fait après : elle demande pardon et elle aide à réparer.</p>
+        <p class="m-q">Est-ce que ça t’est déjà arrivé de casser quelque chose sans le faire exprès ?</p>
+      </article>
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🇫🇷</span>France</span>
+        <h3>Le Petit Chaperon Rouge</h3>
+        <p class="m-phrase">« On reste sur le chemin que maman a montré. »</p>
+        <p class="m-expl">Le loup n’aurait rien pu faire si le Petit Chaperon Rouge n’avait pas quitté le sentier pour cueillir des fleurs. Les grandes personnes donnent parfois des règles qui semblent ennuyeuses — mais elles ont souvent une bonne raison.</p>
+        <p class="m-q">Pourquoi, à ton avis, sa maman lui avait dit de rester sur le chemin ?</p>
+      </article>
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🇬🇧</span>Angleterre</span>
+        <h3>Les 3 Petits Cochons</h3>
+        <p class="m-phrase">« Ce qui est fait avec soin tient bon. »</p>
+        <p class="m-expl">Les deux premiers petits cochons ont bâclé leur maison pour aller jouer plus vite. Le troisième a mis deux jours. Quand le loup est arrivé, c’est chez lui que tout le monde a trouvé refuge. Prendre son temps, ce n’est pas perdre du temps.</p>
+        <p class="m-q">Tu as déjà fait quelque chose trop vite, et il a fallu le recommencer ?</p>
+      </article>
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🪔</span>Orient</span>
+        <h3>Aladin et la lampe magique</h3>
+        <p class="m-phrase">« Le plus beau des vœux, c’est celui qu’on fait pour un autre. »</p>
+        <p class="m-expl">Aladin pouvait tout demander : de l’or, un palais, des trésors. Il a demandé que le génie soit libre. Et c’est pour ça que le génie est resté — non pas parce qu’il devait obéir, mais parce qu’il en avait envie.</p>
+        <p class="m-q">Si tu pouvais faire un vœu pour quelqu’un d’autre, ce serait quoi ?</p>
+      </article>
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🌍</span>Afrique</span>
+        <h3>Le Lion et la Souris</h3>
+        <p class="m-phrase">« On a souvent besoin d’un plus petit que soi. »</p>
+        <p class="m-expl">Le lion a ri quand la souris lui a promis son aide : il était le plus fort, que pouvait-elle pour lui ? Mais sa force n’a servi à rien dans le filet — et les petites dents de la souris, si. Personne n’est inutile.</p>
+        <p class="m-q">Qu’est-ce que tu sais faire, toi, que les grands ne savent pas faire ?</p>
+      </article>
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🇯🇵</span>Japon</span>
+        <h3>Momotaro</h3>
+        <p class="m-phrase">« Une boulette partagée, et les voilà copains. »</p>
+        <p class="m-expl">Momotaro aurait pu se battre contre les Oni : il était assez fort pour ça. Il a préféré leur parler, et leur offrir à manger. Il a compris que leur colère cachait de la tristesse — et que les gens méchants sont souvent des gens seuls.</p>
+        <p class="m-q">Comment on fait, à ton avis, pour se réconcilier avec quelqu’un ?</p>
+      </article>
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🇲🇽</span>Mexique</span>
+        <h3>Le Coq Kiriko</h3>
+        <p class="m-phrase">« Quand chacun aide un peu, tout se termine en chanson. »</p>
+        <p class="m-expl">L’herbe, le mouton, le chien et le bâton ont tous dit non. Puis le soleil a dit oui — et aussitôt, tous les autres ont dit oui aussi. Parfois il suffit d’une seule personne qui accepte pour que tout le monde suive.</p>
+        <p class="m-q">Tu te souviens d’une fois où tu as aidé quelqu’un qui n’osait pas demander ?</p>
+      </article>
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🇺🇦</span>Ukraine</span>
+        <h3>La Moufle</h3>
+        <p class="m-phrase">« Il y a toujours de la place pour un ami de plus… mais pas pour mille ! »</p>
+        <p class="m-expl">Dans la moufle, chacun s’est serré pour faire une place à celui qui avait froid : c’est ça, être accueillant. Mais quand on pousse, pousse, pousse, ça finit par craquer. Être gentil, ce n’est pas dire oui à tout : c’est savoir partager, et savoir aussi quand c’est assez.</p>
+        <p class="m-q">Et toi, à qui ferais-tu une place sous ta couverture quand il fait froid ?</p>
+      </article>
+      <article class="morale-carte">
+        <span class="m-pays"><span class="dr">🇩🇪</span>Allemagne</span>
+        <h3>Les Musiciens de Brême</h3>
+        <p class="m-phrase">« Seul, on est petit… ensemble, on est géants ! »</p>
+        <p class="m-expl">Chacun des quatre amis se croyait trop vieux, trop fatigué ou plus bon à rien. Mais en chantant ensemble, en montant les uns sur les autres, ils ont fait la plus grande musique du monde ! Chacun a sa voix, et c’est ensemble qu’on devient fort.</p>
+        <p class="m-q">Et toi, avec qui aimerais-tu monter un petit orchestre ? Et quel instrument choisirais-tu ?</p>
+      </article>
+  </div>
+</div></section>
+
+<footer><div class="enveloppe">
+  <div class="bloc"><h4>Regarder</h4>
+    <a href="https://www.youtube.com/@bullepistache" target="_blank" rel="noopener">La chaîne YouTube</a>
+    <a href="https://www.youtube.com/playlist?list=PLNW3Fy6UUxY8" target="_blank" rel="noopener">Playlist — Contes du monde</a>
+    <a href="https://www.youtube.com/playlist?list=PLV44KZQSYE18" target="_blank" rel="noopener">Playlist — Toutes les chansons</a>
+  </div>
+  <div class="bloc"><h4>Colorier</h4>
+    <a href="#cahiers">Les cahiers de coloriage</a>
+  </div>
+  <div class="bloc"><h4>Écrire</h4>
+    <p style="margin:0;font-size:15px;color:var(--encre-doux)">
+      <span class="courriel">grainedecontes.studio@gmail.com</span></p>
+  </div>
+  <p class="fin">Bulle &amp; Pistache — contes et comptines du monde pour les 2 à 5 ans.
+    Certaines images et musiques sont créées avec l’aide de l’intelligence artificielle.</p>
+</div></footer>
+
+<script>
+const LIVRES = {"navet": {"titre": "Le Gros Navet", "pays": "Russie", "drapeau": "🇷🇺", "video": "d-t388csBQU", "origine": "Conte traditionnel de Russie", "morale": "Même le plus petit peut tout changer.", "prose": [{"titre": "Grand-Père plante une graine", "texte": "Il était une fois, au bout d’un village, un vieux monsieur qui aimait son jardin plus que tout. Un matin de printemps, il fit un petit trou dans la terre, y déposa une graine de navet, et la recouvrit tout doucement. « Pousse bien », lui dit-il. « Pousse bien et deviens gros. »"}, {"titre": "Les jours passent", "texte": "Il plut. Il fit soleil. Il plut encore. Grand-Père venait tous les matins voir si quelque chose arrivait. Et un jour, deux petites feuilles vertes sortirent de terre. Puis quatre. Puis dix."}, {"titre": "Un navet géant", "texte": "Mais le navet ne s’arrêta pas de grandir. Il devint gros comme un ballon. Puis gros comme un tonneau. Puis gros comme une maison ! Jamais, au grand jamais, on n’avait vu un navet pareil dans tout le pays."}, {"titre": "Grand-Père tire", "texte": "« Il est temps de le cueillir », dit Grand-Père en remontant ses manches. Il attrapa le navet à deux mains et il tira. Il tira, il tira… et le navet ne vint pas."}, {"titre": "Grand-Mère arrive", "texte": "« Grand-Mère ! Viens m’aider ! » Grand-Mère accourut et s’accrocha à Grand-Père. Grand-Mère tire Grand-Père, Grand-Père tire le navet… et on tire, et on tire… et le navet ne vient pas !"}, {"titre": "La petite fille", "texte": "« Petite fille ! Viens nous aider ! » La petite fille accourut et s’accrocha à Grand-Mère. La petite fille tire Grand-Mère, Grand-Mère tire Grand-Père, Grand-Père tire le navet… et on tire, et on tire… et le navet ne vient pas !"}, {"titre": "Bulle s’y met", "texte": "« Bulle ! Viens nous aider ! » Bulle arriva en courant, les oreilles au vent, et s’accrocha à la petite fille. Pistache tournait au-dessus en criant « Oh hisse ! Oh hisse ! » Et on tire, et on tire… et le navet ne vient pas !"}, {"titre": "Le chat aussi", "texte": "« Le chat ! Viens nous aider ! » Le chat s’étira longuement — parce qu’un chat ne se presse jamais — puis il s’accrocha à Bulle. Ils étaient cinq, maintenant, à tirer de toutes leurs forces. Et on tire, et on tire… et le navet ne vient toujours pas !"}, {"titre": "La toute petite souris", "texte": "Alors, du bord du champ, une toute petite souris s’avança. « Je peux aider, moi aussi ? » Grand-Père la regarda. Elle était si menue qu’on l’aurait tenue dans une main. « Viens », dit-il. Et elle s’accrocha au chat."}, {"titre": "Et PLOP !", "texte": "Un. Deux. Trois ! Et on tire, et on tire… et PLOP ! Le navet sortit de terre d’un seul coup, et tout le monde roula dans l’herbe en riant. Ce soir-là, il y eut de la soupe de navet pour tout le village. Et Grand-Père répétait à qui voulait l’entendre : « C’est la plus petite qui a fait la différence. »"}], "chanson": [], "illus": ["/img/29d9cc987e9c6b.jpg", "/img/51009d186f1a09.jpg", "/img/267cf632af0f31.jpg", "/img/498e84199e7cfb.jpg", "/img/f885e05aa501e9.jpg", "/img/fc1bff2411b5b1.jpg", "/img/2fef29310094ba.jpg", "/img/4f1d98a0171d35.jpg", "/img/d46f16d23cbbf0.jpg", "/img/87dcac550c96ce.jpg"], "accroche": "Un navet si gros qu’il faut tout le village pour le sortir de terre.", "couverture": "/img/267cf632af0f31.jpg", "explication": "Grand-Père, Grand-Mère, la petite fille, Bulle et le chat tiraient déjà de toutes leurs forces. Il a suffi d’une souris de plus pour que le navet cède. Cela ne veut pas dire qu’elle était la plus forte : cela veut dire que c’est <em>tous ensemble</em> qu’ils ont réussi.", "question": "Et toi, qu’est-ce que tu arrives à faire quand quelqu’un t’aide un peu ?"}, "boucle": {"titre": "Boucle d’Or et les 3 Ours", "pays": "Angleterre", "drapeau": "🇬🇧", "video": "kskZ5nRgGKg", "origine": "Conte traditionnel d’Angleterre", "morale": "On frappe avant d’entrer — mais on peut toujours se faire pardonner.", "prose": [{"titre": "Trois ours dans la forêt", "texte": "Il était une fois, au milieu d’une grande forêt, trois ours qui vivaient dans une petite maison bien rangée. Un grand ours, une maman ourse, et un tout petit ourson. Chacun avait son bol, sa chaise et son lit — un grand, un moyen, un tout petit."}, {"titre": "La soupe est trop chaude", "texte": "Ce matin-là, la soupe fumait encore. « Elle est trop chaude », dit le grand ours. « Allons nous promener », dit la maman ourse, « elle aura refroidi quand nous rentrerons. » Et ils sortirent tous les trois, en laissant la porte entrouverte."}, {"titre": "Une petite fille passe par là", "texte": "Or il passa par là une petite fille aux cheveux dorés, qu’on appelait Boucle d’Or. Elle vit la porte ouverte, elle sentit la bonne odeur de soupe… et elle entra. Ce n’est pas très poli, mais elle avait très faim."}, {"titre": "Trop chaud, trop froid, juste bien", "texte": "Elle goûta la grande soupe : trop chaude ! Elle goûta la moyenne : trop froide ! Puis elle goûta la toute petite… et celle-là était juste bien. Elle la mangea jusqu’au fond."}, {"titre": "Trop dure, trop molle… CRAC !", "texte": "Ensuite elle voulut s’asseoir. La grande chaise était trop dure. La moyenne était trop molle. Et la toute petite était juste bien — mais elle était si petite que, CRAC, elle se cassa sous Boucle d’Or !"}, {"titre": "Et le petit lit, juste bien", "texte": "Boucle d’Or monta alors à l’étage. Le grand lit était trop dur, le moyen trop mou. Mais le tout petit lit était juste bien. Elle s’y allongea, ferma les yeux, et s’endormit profondément."}, {"titre": "Les trois ours rentrent", "texte": "Les trois ours revinrent de leur promenade. « Quelqu’un a goûté ma soupe ! » dit le grand ours. « Quelqu’un a goûté la mienne aussi ! » dit la maman ourse. « Et moi », dit le petit ourson, « quelqu’un a mangé toute la mienne ! »"}, {"titre": "Quelqu’un dort dans mon lit", "texte": "Ils montèrent à l’étage. « Quelqu’un s’est couché dans mon lit ! » dit le grand ours. « Dans le mien aussi ! » dit la maman ourse. Et le petit ourson s’écria : « Quelqu’un dort dans mon lit — et elle y est encore ! »"}, {"titre": "Boucle d’Or se réveille", "texte": "Boucle d’Or ouvrit les yeux et vit trois museaux penchés au-dessus d’elle. Elle eut très peur — mais le petit ourson lui sourit. « Tu as cassé ma chaise », dit-il, « mais tu veux bien jouer avec moi ? »"}, {"titre": "Un ours, deux ours, trois oursons", "texte": "Alors Boucle d’Or demanda pardon, aida à réparer la petite chaise, et ils passèrent l’après-midi à jouer tous ensemble dans la forêt. Depuis ce jour, elle frappe toujours avant d’entrer — mais elle revient souvent."}], "chanson": [], "illus": ["/img/844720c28430d4.jpg", "/img/3659ed114039e8.jpg", "/img/5215a70bff33f8.jpg", "/img/d7a98a851d37ab.jpg", "/img/6bb523e53a87d1.jpg", "/img/e1e6c4a4662fcb.jpg", "/img/577fa3c87f8b69.jpg", "/img/da8738fb92588b.jpg", "/img/3b214d3e3e99e6.jpg", "/img/69197fbb2e49da.jpg"], "accroche": "Trop chaud, trop froid… et parfois, juste bien.", "couverture": "/img/d7a98a851d37ab.jpg", "explication": "Boucle d’Or a fait une bêtise : elle est entrée chez des gens sans demander, elle a mangé leur soupe et cassé une chaise. Ce qui compte, c’est ce qu’elle fait après : elle demande pardon et elle aide à réparer.", "question": "Est-ce que ça t’est déjà arrivé de casser quelque chose sans le faire exprès ?"}, "chaperon": {"titre": "Le Petit Chaperon Rouge", "pays": "France", "drapeau": "🇫🇷", "video": "7CNSGU8BHzg", "origine": "Charles Perrault, 1697", "morale": "On reste sur le chemin que maman a montré.", "prose": [{"titre": "Le petit chaperon rouge", "texte": "Il était une fois une petite fille si gentille que tout le monde l’aimait. Sa grand-mère lui avait cousu un petit chaperon de velours rouge, qu’elle portait du matin au soir. Aussi l’appelait-on partout le Petit Chaperon Rouge."}, {"titre": "Le panier de galettes", "texte": "Un matin, sa maman lui dit : « Grand-mère est un peu fatiguée. Porte-lui ces galettes et ce petit pot de beurre. » Elle lui donna un panier, l’embrassa, et ajouta : « Reste bien sur le chemin. »"}, {"titre": "Promenons-nous dans les bois", "texte": "Le Petit Chaperon Rouge partit en chantant. « Promenons-nous dans les bois, pendant que le loup n’y est pas… » Les oiseaux sifflaient, le soleil passait entre les feuilles, et le chemin était tout doux sous ses pieds."}, {"titre": "La rencontre", "texte": "Au détour d’un arbre, un grand loup gris apparut. « Bonjour, petite », dit-il de sa voix la plus douce. « Où vas-tu comme ça ? » — « Chez ma grand-mère, au bout du chemin, lui porter des galettes. »"}, {"titre": "Les jolies fleurs", "texte": "« Regarde donc ces fleurs », dit le loup. « Ta grand-mère serait si contente d’en avoir un bouquet ! » Le Petit Chaperon Rouge quitta le chemin pour en cueillir — une, puis deux, puis dix. Pendant ce temps, le loup courait."}, {"titre": "Chez grand-mère", "texte": "Le loup arriva le premier. Il entra chez la grand-mère, qui fut bien surprise, et il la cacha dans le placard. Puis il mit son bonnet, ses lunettes, se glissa dans le lit, et remonta la couverture jusqu’au nez."}, {"titre": "Comme tu as de grandes oreilles", "texte": "Le Petit Chaperon Rouge arriva, le bouquet à la main. « Bonjour grand-mère ! Comme tu as de grandes oreilles ! » — « C’est pour mieux t’écouter, mon enfant. » — « Comme tu as de grands yeux ! » — « C’est pour mieux te voir. »"}, {"titre": "De si grandes dents", "texte": "« Et comme tu as de grandes dents ! » Le loup sauta du lit. « C’est pour mieux te… » Mais il n’eut pas le temps de finir sa phrase, car le Petit Chaperon Rouge poussa un cri qui s’entendit jusqu’au bout de la forêt."}, {"titre": "Le chasseur accourt", "texte": "Un brave chasseur passait justement par là. Il entra d’un coup, attrapa le loup par la queue et le mit dehors. « Et ne reviens plus faire peur aux gens ! » Le loup détala si vite qu’on ne vit plus que la poussière."}, {"titre": "Tout finit en chanson", "texte": "On ouvrit le placard, et grand-mère en sortit toute décoiffée mais rieuse. On partagea les galettes et le petit pot de beurre, le chasseur resta goûter, et le Petit Chaperon Rouge promit — cette fois pour de bon — de ne plus jamais quitter le chemin."}], "chanson": [], "illus": ["/img/792608c3d72304.jpg", "/img/6d3447e06772e1.jpg", "/img/cfb8a85e2cc4ae.jpg", "/img/a6e165fcbebaff.jpg", "/img/f85471fc859182.jpg", "/img/68a1c0c2069a34.jpg", "/img/d49c51703dbe8f.jpg", "/img/fcf7a4a6cdaef4.jpg", "/img/2d0b4d66aaa762.jpg", "/img/1bde782dbdbe42.jpg"], "accroche": "Promenons-nous dans les bois, pendant que le loup n’y est pas.", "couverture": "/img/cfb8a85e2cc4ae.jpg", "explication": "Le loup n’aurait rien pu faire si le Petit Chaperon Rouge n’avait pas quitté le sentier pour cueillir des fleurs. Les grandes personnes donnent parfois des règles qui semblent ennuyeuses — mais elles ont souvent une bonne raison.", "question": "Pourquoi, à ton avis, sa maman lui avait dit de rester sur le chemin ?"}, "cochons": {"titre": "Les 3 Petits Cochons", "pays": "Angleterre", "drapeau": "🇬🇧", "video": "nTGKD74wGHg", "origine": "Conte traditionnel d’Angleterre", "morale": "Ce qui est fait avec soin tient bon.", "prose": [{"titre": "Trois petits cochons", "texte": "Il était une fois trois petits cochons, trois frères, qui vivaient chez leur maman. Un beau matin, ils furent assez grands pour partir et construire chacun sa maison. « Soyez prudents », leur dit leur maman. « Et méfiez-vous du loup. »"}, {"titre": "La maison de paille", "texte": "Le premier petit cochon était pressé de jouer. Il ramassa de la paille, en fit un tas, et sa maison fut terminée avant midi. « Elle est jolie », dit-il, « et j’ai tout l’après-midi pour m’amuser ! »"}, {"titre": "La maison de bois", "texte": "Le deuxième petit cochon prit des planches de bois et les cloua les unes aux autres. Ce fut un peu plus long — jusqu’au goûter. « La mienne est plus solide », dit-il fièrement."}, {"titre": "La maison de briques", "texte": "Le troisième, lui, choisit des briques. Il en posa une, puis une autre, puis encore une autre. Il y travailla toute la journée, et même une partie du lendemain. Ses frères se moquaient de lui. Il continua quand même."}, {"titre": "Le loup arrive", "texte": "Et voilà qu’un soir, le grand loup gris descendit le chemin. Il s’arrêta devant la maison de paille et frappa. « Petit cochon, petit cochon, laisse-moi entrer ! » — « Non ! Non ! Non ! »"}, {"titre": "Je souffle, je souffle", "texte": "« Alors je souffle, je souffle… et ta maison s’envolera ! » Le loup prit une grande inspiration, et FLOUCH ! La paille s’envola dans tous les sens. Le premier petit cochon courut se réfugier chez son frère."}, {"titre": "Et CRAAAC !", "texte": "Le loup arriva devant la maison de bois. « Petit cochon, petit cochon, laisse-moi entrer ! » — « Non ! Non ! Non ! » — « Alors je souffle, je souffle… » Et CRAAAC ! Les planches cédèrent. Les deux petits cochons filèrent chez le troisième."}, {"titre": "La maison de briques tient bon", "texte": "Le loup se planta devant la maison de briques. Il souffla une fois. Rien. Il souffla deux fois. Rien. Il souffla si fort qu’il en devint tout rouge… et la maison ne bougea pas d’un pouce."}, {"titre": "Le loup s’en va", "texte": "Essoufflé, décoiffé, le loup s’assit par terre. « Bon », dit-il en reprenant son souffle, « je crois que j’ai compris. » Et il s’en alla sur le chemin, sans se retourner."}, {"titre": "Tous les trois à l’abri", "texte": "Les trois petits cochons sortirent sur le pas de la porte. « Merci, mon frère », dirent les deux premiers. « La prochaine fois, on t’aidera à porter les briques. » Et ils firent une grande fête, tous les trois, dans la maison qui tenait bon."}], "chanson": [], "illus": ["/img/10578902502c28.jpg", "/img/8094f4f97af7e7.jpg", "/img/af5753ba9ddcbc.jpg", "/img/094b17457b3a35.jpg", "/img/2dfb4a569250c2.jpg", "/img/3b0fe7b57dd010.jpg", "/img/74b52f96bef6b3.jpg", "/img/a550449905a960.jpg", "/img/f05f0ecd1ac5fb.jpg", "/img/de8214646f3193.jpg"], "accroche": "Je souffle, je souffle… et ta maison s’envolera !", "couverture": "/img/3b0fe7b57dd010.jpg", "explication": "Les deux premiers petits cochons ont bâclé leur maison pour aller jouer plus vite. Le troisième a mis deux jours. Quand le loup est arrivé, c’est chez lui que tout le monde a trouvé refuge. Prendre son temps, ce n’est pas perdre du temps.", "question": "Tu as déjà fait quelque chose trop vite, et il a fallu le recommencer ?"}, "aladin": {"titre": "Aladin et la lampe magique", "pays": "Orient", "drapeau": "🪔", "video": "NWDaIbtV9AQ", "origine": "Les Mille et Une Nuits, traduction d’Antoine Galland, 1704", "morale": "Le plus beau des vœux, c’est celui qu’on fait pour un autre.", "prose": [{"titre": "Le garçon du marché", "texte": "Il était une fois, dans une ville d’Orient aux toits dorés, un garçon nommé Aladin. Il n’avait pas grand-chose : une veste usée, un bonnet rouge, et une curiosité qui le poussait à regarder partout. Il passait ses journées au marché, entre les étals de tapis et d’épices."}, {"titre": "Une vieille lampe", "texte": "Un jour, parmi les objets d’un marchand, il aperçut une petite lampe de cuivre, toute terne, que personne ne voulait. Il l’acheta pour trois fois rien. « Elle est sale », dit le marchand. « Tu perds ton argent. » Aladin la prit quand même."}, {"titre": "Frotte, frotte la lampe", "texte": "De retour chez lui, il voulut la nettoyer. Il frotta une fois. Il frotta deux fois. Et à la troisième — PFFF ! — un nuage de fumée bleue s’échappa du bec de la lampe et emplit toute la pièce."}, {"titre": "Le génie bleu", "texte": "De la fumée sortit un génie immense, bleu comme le ciel du soir, avec un grand sourire. « Me voilà ! » dit-il d’une voix qui fit trembler les carreaux. « Tu m’as réveillé, alors je t’écoute. Que puis-je faire pour toi ? »"}, {"titre": "Le premier vœu", "texte": "Aladin resta bouche bée. Il réfléchit longtemps — car on ne gaspille pas un vœu. Enfin il demanda : « Je voudrais voir le monde. Tout le monde. D’en haut. »"}, {"titre": "Le tapis volant", "texte": "Le génie claqua des doigts, et un tapis se déroula dans les airs, frangé d’or et de pourpre. « Monte », dit-il. Aladin s’assit dessus, Bulle et Pistache sautèrent à côté de lui… et le tapis s’éleva doucement au-dessus des toits."}, {"titre": "Au-dessus de la ville étoilée", "texte": "Ils survolèrent les dômes et les minarets, les jardins endormis, les fontaines qui brillaient sous la lune. En bas, la ville ressemblait à une poignée de lanternes posées dans la nuit. Aladin n’avait jamais rien vu d’aussi beau."}, {"titre": "Les étoiles tout près", "texte": "Le tapis monta encore, jusqu’à ce que les étoiles semblent à portée de main. Pistache battait des ailes de bonheur, Bulle regardait en bas sans oser bouger les pattes, et le génie riait de les voir si émerveillés."}, {"titre": "Le plus beau des vœux", "texte": "Quand ils redescendirent, le génie demanda : « Et tes deux autres vœux ? » Aladin regarda la lampe, puis ses amis. « Je voudrais que tu sois libre », dit-il. Le génie en resta muet un long moment."}, {"titre": "Un ami, pas un maître", "texte": "Alors les chaînes invisibles tombèrent, et le génie éclata d’un rire énorme et joyeux. Depuis ce jour, on raconte qu’on les voit parfois passer tous les quatre au-dessus de la ville, sur un tapis frangé d’or — un garçon, un chien, un perroquet, et un génie qui n’obéit plus à personne mais qui reste, parce qu’il en a envie."}], "chanson": [], "illus": ["/img/6a9a0b65349580.jpg", "/img/ac69a2a85127ac.jpg", "/img/7e05353e79d40e.jpg", "/img/1b9297954a012d.jpg", "/img/c7a1509ffb1f5a.jpg", "/img/6dff2397ffbaed.jpg", "/img/1f03b0773ddff7.jpg", "/img/dff6452a8241f2.jpg", "/img/a85e0698068bc0.jpg", "/img/2717d097c1eaa3.jpg"], "accroche": "Frotte la lampe, et le monde entier passe sous tes pieds.", "couverture": "/img/6dff2397ffbaed.jpg", "explication": "Aladin pouvait tout demander : de l’or, un palais, des trésors. Il a demandé que le génie soit libre. Et c’est pour ça que le génie est resté — non pas parce qu’il devait obéir, mais parce qu’il en avait envie.", "question": "Si tu pouvais faire un vœu pour quelqu’un d’autre, ce serait quoi ?"}, "lion": {"titre": "Le Lion et la Souris", "pays": "Afrique", "drapeau": "🌍", "video": "DBZydRBrzCg", "origine": "Conte d’Afrique, d’après Ésope", "morale": "On a souvent besoin d’un plus petit que soi.", "prose": [{"titre": "Au cœur de la savane", "texte": "Il était une fois, au cœur de la savane dorée, un lion si grand et si fort que tous les animaux baissaient la tête sur son passage. On l’appelait le roi. Quand il dormait sous le baobab, personne n’osait faire le moindre bruit."}, {"titre": "Une toute petite souris", "texte": "Ce jour-là pourtant, une toute petite souris trottinait entre les herbes hautes. Elle était si occupée à chercher des graines qu’elle ne regardait pas où elle allait. Et voilà qu’elle grimpa, sans même s’en apercevoir, sur le museau du lion endormi."}, {"titre": "Le réveil du roi", "texte": "Le lion ouvrit un œil. Puis l’autre. Et d’un coup de patte, il attrapa la souris par la queue. « Qui ose me réveiller ? » gronda-t-il, et sa voix fit trembler toute la savane."}, {"titre": "La promesse", "texte": "« Pardon, pardon ! » couina la petite souris. « Laisse-moi partir, et un jour, je te le promets, je pourrai t’aider à mon tour. » Le lion la regarda, minuscule entre ses griffes."}, {"titre": "Le grand rire", "texte": "Alors le lion éclata de rire. Un rire si énorme que les oiseaux s’envolèrent de l’arbre. « Toi ? M’aider, moi ? » Il riait tellement qu’il en oublia de la retenir. Et il ouvrit la patte. « Va-t’en, petite. Tu m’as fait rire. »"}, {"titre": "Les jours passent", "texte": "Les jours passèrent. La savane retrouva son calme, le soleil tourna dans le ciel, et personne ne pensa plus à cette histoire. Ni le lion, qui dormait. Ni la souris, qui trottinait."}, {"titre": "Le piège", "texte": "Jusqu’au matin où des chasseurs tendirent un grand filet de cordes entre les arbres. Le lion, qui passait par là sans se méfier, s’y trouva pris. Il tira, il rugit, il se débattit — mais plus il bougeait, plus les cordes se serraient."}, {"titre": "Qui trotte dans les herbes ?", "texte": "Son rugissement porta loin, très loin. Et dans les herbes hautes, quelqu’un l’entendit. Une toute petite souris, qui n’avait rien oublié. Elle accourut, grimpa sur le filet, et se mit à ronger. Un fil. Deux fils. Trois fils…"}, {"titre": "Et CRAC !", "texte": "Et CRAC ! Le filet s’ouvrit d’un coup. Le grand lion roula dans l’herbe, libre, et se releva en secouant sa crinière. Devant lui, la petite souris reprenait son souffle."}, {"titre": "La leçon", "texte": "« Merci, merci, merci mille fois », dit le lion, tout doucement cette fois. Et depuis ce jour, dans la savane, on raconte que le plus fort de tous a compris quelque chose : on a souvent besoin d’un plus petit que soi."}], "chanson": [{"titre": "Intro chantee", "vers": ["Bulle et Pistache s'en vont d'un pas leger,", "Direction l'Afrique et sa savane doree,", "Voici le roi lion, si fort et si puissant,", "Et une petite souris... toute petite pourtant !"]}, {"titre": "Refrain", "vers": ["Un grand lion, une toute petite souris,", "Grrrr fait le lion ! Couic couic fait la souris !", "On a souvent besoin d'un plus petit que soi,", "Dans la savane on s'aide, une, deux, trois !"]}, {"titre": "Couplet 1 - le lion qui dort", "vers": ["Sous le grand baobab, le lion fait dodo,", "Il ronfle si fort qu'on l'entend la-haut,", "Une petite souris trotte sur son museau,", "Le lion ouvre un oeil... et l'attrape aussitot !"]}, {"titre": "Refrain", "vers": ["Un grand lion, une toute petite souris,", "Grrrr fait le lion ! Couic couic fait la souris !", "On a souvent besoin d'un plus petit que soi,", "Dans la savane on s'aide, une, deux, trois !"]}, {"titre": "Couplet 2 - la promesse", "vers": ["Pitie, grand lion, laisse-moi m'en aller,", "Un jour, je te le jure, je pourrai t'aider !", "Le lion rit si fort que la savane resonne,", "Puis il ouvre sa patte... et la souris se sauve !"]}, {"titre": "Refrain", "vers": ["Un grand lion, une toute petite souris,", "Grrrr fait le lion ! Couic couic fait la souris !", "On a souvent besoin d'un plus petit que soi,", "Dans la savane on s'aide, une, deux, trois !"]}, {"titre": "Couplet 3 - le filet", "vers": ["Quelques jours plus tard, pris dans un grand filet,", "Le lion est captif, il ne peut plus bouger,", "Il rugit, il rugit, mais personne ne vient,", "Le plus fort de tous ne peut plus rien, plus rien !"]}, {"titre": "Pont - la souris ronge, ACCELERE", "vers": ["Mais qui trotte, qui trotte dans les hautes herbes ?", "C'est la petite souris ! Couic couic couic !", "Elle ronge, ronge, ronge la grosse corde,", "Ronge, ronge, ronge, encore et encore !", "Un fil, deux fils, trois fils... et CRAC !"]}, {"titre": "Final - la fete", "vers": ["Le grand lion est libre, il bondit de joie,", "Il dit merci, merci, merci mille fois !", "Grrrr fait le lion ! Couic couic fait la souris !", "Dans la savane ils dansent, les meilleurs amis !"]}, {"titre": "Outro douce", "vers": ["Le lion a compris, et c'est une belle lecon :", "On a souvent besoin d'un plus petit que soi !", "Au revoir la savane, Bulle et Pistache s'en vont,", "Abonne-toi bien vite... et a tres bientot, les petits coquins !"]}], "illus": ["/img/c8d84f69af7ad8.jpg", "/img/5db940840aa3ac.jpg", "/img/162ecadb870bdf.jpg", "/img/38b5ce1e3d3fca.jpg", "/img/99e356b02cdab9.jpg", "/img/044ba51455eb82.jpg", "/img/b8ec78f16147a1.jpg", "/img/2beb9df46b3275.jpg", "/img/d7101cff948302.jpg", "/img/52088b348175dd.jpg"], "accroche": "Le plus grand de la savane, sauvé par la plus petite.", "couverture": "/img/b8ec78f16147a1.jpg", "explication": "Le lion a ri quand la souris lui a promis son aide : il était le plus fort, que pouvait-elle pour lui ? Mais sa force n’a servi à rien dans le filet — et les petites dents de la souris, si. Personne n’est inutile.", "question": "Qu’est-ce que tu sais faire, toi, que les grands ne savent pas faire ?"}, "momotaro": {"titre": "Momotaro", "pays": "Japon", "drapeau": "🇯🇵", "video": "YGblkgriYn4", "origine": "Conte traditionnel du Japon", "morale": "Une boulette partagée, et les voilà copains.", "prose": [{"titre": "Au pays des cerisiers", "texte": "Il était une fois, au Japon, un petit village où les cerisiers perdaient leurs pétales dans le vent. Au bord de la rivière vivaient un vieil homme et une vieille femme. Ils étaient doux, ils étaient heureux — mais ils n’avaient pas d’enfant, et cela leur faisait un peu de peine."}, {"titre": "Un chant sur l’eau", "texte": "Un matin, la grand-mère lavait son linge dans la rivière, comme chaque jour. L’eau courait, claire et fraîche, et elle chantait tout bas pour se tenir compagnie."}, {"titre": "La pêche géante", "texte": "C’est alors qu’elle vit arriver, portée par le courant, une pêche. Mais quelle pêche ! Rose, ronde, énorme — plus grosse qu’un panier. « Oh ! » dit la grand-mère. « Quelle merveille ! » Et elle la ramena chez elle à deux bras."}, {"titre": "Elle s’ouvre en lumière", "texte": "Le soir venu, alors qu’ils s’apprêtaient à la couper, la pêche se mit à bouger. Tout doucement d’abord. Puis elle s’ouvrit — et une lumière douce en sortit. Au milieu, assis bien droit, un petit bébé leur fit « Coucou ! »"}, {"titre": "Momotaro", "texte": "« Momotaro », dirent-ils, les larmes aux yeux. Le garçon de la pêche. Momo veut dire pêche, et tarō veut dire garçon. Ils l’élevèrent comme leur propre enfant, et le village entier vint voir le miracle."}, {"titre": "Il grandit", "texte": "Momotaro grandit vite, et grandit bien. Il était fort, mais surtout il était gentil — et c’est de cela que ses parents étaient le plus fiers."}, {"titre": "Les boulettes du voyage", "texte": "Un jour, il apprit que sur une île, au large, vivaient les Oni : des ogres qui faisaient peur à tout le monde. « Je vais aller leur parler », dit-il simplement. Sa mère lui prépara des boulettes de riz et les glissa dans un baluchon blanc."}, {"titre": "Trois amis en chemin", "texte": "Sur le chemin, un petit chien s’approcha. « Ouaf ! Une boulette pour moi ? » Momotaro partagea. Puis ce fut un singe : « Hi hi ! Et pour moi ? » Il partagea encore. Puis un faisan : « Piou piou ! » Il partagea toujours. Et tous trois le suivirent."}, {"titre": "Sur la grande mer bleue", "texte": "Ils montèrent dans un bateau et prirent la mer. Le vent gonflait la voile, le faisan volait devant pour montrer le chemin, et le chien et le singe scrutaient l’horizon."}, {"titre": "L’île des Oni", "texte": "L’île apparut enfin. Les Oni étaient là, rouges et bleus, avec leurs cornes et leurs gros sourcils. « Grrr ! » firent-ils, en fronçant le nez. Mais Momotaro s’avança sans trembler, et il les regarda bien en face."}, {"titre": "Une boulette partagée", "texte": "« Vous avez l’air en colère », dit-il. « Mais je crois surtout que vous avez l’air tristes. » Et il tendit une boulette de riz. Le plus grand des Oni la prit, la goûta… et son visage se défroissa tout entier."}, {"titre": "Sayonara les amis", "texte": "Ce soir-là, sous les lanternes de papier, les Oni et les amis dansèrent ensemble jusqu’à la nuit. Et Momotaro rentra chez lui avec quelque chose de bien plus précieux qu’un trésor : des amis de plus. Sayonara, les amis — à bientôt !"}], "chanson": [{"titre": "Intro", "vers": ["Coucou les amis, ouvrez grand les yeux,", "On s'envole au Japon sous un ciel lumineux !", "Les pétales de cerisier dansent dans le vent,", "Bulle et Pistache vous emmènent… en avant !"]}, {"titre": "Refrain", "vers": ["Momotaro, Momotaro,", "Né d'une pêche au bord de l'eau !", "Une boulette pour toi, une boulette pour moi,", "Ensemble on est plus forts… allez, on y va !"]}, {"titre": "Couplet 1 - La rivière", "vers": ["Au bord de la rivière, une douce grand-mère", "Chantait en lavant son linge au soleil,", "Quand sur l'eau toute claire… oh ! une pêche géante", "Glisse vers elle, rose et ronde… quelle merveille !"]}, {"titre": "Couplet 2 - La surprise", "vers": ["Le soir, dans la maison, la pêche bouge tout doux,", "Elle s'ouvre en lumière… qui donc est caché là ?", "Un tout petit bébé qui leur fait « Coucou ! »", "« Tu t'appelles Momotaro ! » Hourra, hourra !"]}, {"titre": "Refrain", "vers": ["Momotaro, Momotaro,", "Né d'une pêche au bord de l'eau !", "Une boulette pour toi, une boulette pour moi,", "Ensemble on est plus forts… allez, on y va !"]}, {"titre": "Couplet 3 - Le départ", "vers": ["Momotaro grandit, si fort et si gentil,", "Mais sur l'île des Oni, des ogres font du bruit !", "« Je vais leur parler ! » dit-il en souriant,", "Mamie glisse des boulettes dans son baluchon blanc."]}, {"titre": "Pont des amis - appel-réponse", "vers": ["Sur le chemin, un petit chien : « Ouaf ! Une boulette pour moi ? »", "(Chœur) Tiens, mon ami ! — Et le chien vient avec lui !", "Dans les bambous, un singe : « Hi hi ! Et pour moi ? »", "(Chœur) Tiens, mon ami ! — Et le singe vient avec lui !", "Dans le ciel, un faisan : « Piou piou ! Et pour moi ? »", "(Chœur) Tiens, mon ami ! — Et le faisan vient avec lui !"]}, {"titre": "Refrain", "vers": ["Momotaro, Momotaro,", "Né d'une pêche au bord de l'eau !", "Une boulette pour toi, une boulette pour moi,", "Ensemble on est plus forts… allez, on y va !"]}, {"titre": "Couplet 4 - La grande mer", "vers": ["Tous ensemble en bateau, sur la grande mer bleue,", "Les vagues font hop-là, le vent souffle joyeux,", "Pistache vole devant pour montrer le chemin,", "Et voilà l'île des Oni… toute proche, enfin !"]}, {"titre": "Couplet 5 - Les Oni", "vers": ["Les Oni font « Grrr ! », ils ont l'air fâchés,", "Mais au fond ils sont tristes : personne ne vient jouer…", "Momotaro sourit et leur tend la main :", "« Une boulette pour vous ! » … et les voilà copains !"]}, {"titre": "Refrain final - ronde", "vers": ["Momotaro, Momotaro,", "Né d'une pêche au bord de l'eau !", "Une boulette pour toi, une boulette pour moi,", "Quand on partage… la joie est là !", "Le chien, le singe, le faisan, dansez tous en rond,", "Les Oni et les amis chantent la chanson !"]}, {"titre": "Outro - au revoir", "vers": ["Le voyage s'achève sous les cerisiers en fleurs,", "Abonne-toi bien vite pour garder ce bonheur !", "Bulle et Pistache t'envoient des bisous tout doux,", "Sayonara les amis… à bientôt, coucou !", "PETIT LEXIQUE (pour la description YouTube)", "Momotaro  : « le garçon de la pêche » (momo = pêche, taro = garçon)", "Oni       : ogres du folklore japonais (ici grognons… mais gentils)", "Kibi dango: les petites boulettes sucrées qu'il partage", "Sayonara  : « au revoir » en japonais"]}], "illus": ["/img/41d8d17255c6e8.jpg", "/img/cf2b8e928fc39c.jpg", "/img/2a7ecea6804e21.jpg", "/img/befa2aaa415c91.jpg", "/img/eaab158a4b43e9.jpg", "/img/3cb524dd1de790.jpg", "/img/d8e5bfd6521fbf.jpg", "/img/800248ae28720b.jpg", "/img/030a13f504ba9c.jpg", "/img/3c544e049f539a.jpg", "/img/e6aff31dac407f.jpg", "/img/b8c3852565b6b2.jpg"], "accroche": "Une pêche géante s’ouvre en lumière — et un bébé fait « Coucou ! »", "couverture": "/img/befa2aaa415c91.jpg", "explication": "Momotaro aurait pu se battre contre les Oni : il était assez fort pour ça. Il a préféré leur parler, et leur offrir à manger. Il a compris que leur colère cachait de la tristesse — et que les gens méchants sont souvent des gens seuls.", "question": "Comment on fait, à ton avis, pour se réconcilier avec quelqu’un ?"}, "kiriko": {"titre": "Le Coq Kiriko", "pays": "Mexique", "drapeau": "🇲🇽", "video": "UttOMVnN0n0", "origine": "Conte traditionnel du Mexique", "morale": "Quand chacun aide un peu, tout se termine en chanson.", "prose": [{"titre": "Le village au petit matin", "texte": "Il était une fois, au Mexique, un village aux murs blancs et aux portes peintes de toutes les couleurs. Le soleil s’y levait doucement, les volets s’ouvraient un à un, et l’odeur du pain chaud montait dans la rue."}, {"titre": "Kiriko se prépare", "texte": "Dans la dernière maison vivait un coq nommé Kiriko. Ce jour-là n’était pas un jour ordinaire : son oncle se mariait. Kiriko avait lustré chacune de ses plumes et noué un petit nœud papillon sous son bec. Il était magnifique."}, {"titre": "En route pour la noce", "texte": "Il partit sur le chemin en chantant « Ki-ri-ki-ki ! » à pleine voix. Bulle marchait à côté de lui et Pistache volait au-dessus, pour montrer la route. Les agaves bordaient le sentier, et la journée promettait d’être belle."}, {"titre": "Le grain de blé", "texte": "En traversant le champ de maïs, Kiriko aperçut un petit grain de blé qui brillait dans la poussière. Il n’avait pas faim. Mais il brillait vraiment. Alors il se pencha, et… MIAM. Oh non. Son beau bec doré était tout sale."}, {"titre": "Herbe, nettoie mon bec", "texte": "« Herbe, herbe, nettoie mon bec, je t’en prie ! » L’herbe se secoua de droite à gauche. « Non ! » Kiriko resta planté là, le bec taché, au milieu du champ."}, {"titre": "Mouton, mange cette herbe", "texte": "Il courut jusqu’au pâturage. « Mouton, mouton, mange cette herbe, s’il te plaît ! » Le mouton leva la tête, mâcha lentement, et secoua le museau. « Non ! »"}, {"titre": "Chien, gronde le mouton", "texte": "À la fontaine, il trouva le chien du village qui se rafraîchissait. « Chien, chien, gronde le mouton ! » Le chien bâilla, s’étira au soleil, et répondit sans même se lever : « Non ! »"}, {"titre": "Bâton, tape le chien", "texte": "Au marché, sous les guirlandes de papier découpé, un bâton était appuyé contre un étal. « Bâton, bâton, tape le chien ! » Le bâton se raidit de tout son long. « Non ! »"}, {"titre": "Le cœur tout gris", "texte": "Kiriko s’assit au bord du chemin. Personne n’avait voulu l’aider. Le mariage allait commencer sans lui. Bulle s’approcha tout doucement et posa sa patte sur son aile, sans rien dire. Pistache se percha près de son oreille : « Regarde donc le ciel. »"}, {"titre": "Soleil, aide-moi", "texte": "Kiriko leva enfin la tête. Tout là-haut, le grand soleil doré le regardait. « Soleil, soleil… aide-moi, s’il te plaît. » Il y eut un silence. Puis le soleil ouvrit les yeux, sourit — et dit : « OUI. »"}, {"titre": "La cascade des oui", "texte": "Alors tout s’enchaîna. Le bâton dit oui ! Le chien dit oui ! Le mouton dit oui ! Et l’herbe dit oui ! Elle frotta, frotta, frotta le bec de Kiriko — et le voilà propre comme un sou neuf."}, {"titre": "La noce sous les lampions", "texte": "Kiriko arriva juste à temps. Les lampions s’allumaient, le papel picado dansait dans le vent, et tout le village se mit à danser sur la place. « Quand chacun aide un peu », dit l’oncle en levant son verre, « tout se termine en chanson ! » ¡Hasta luego, les amis !"}], "chanson": [{"titre": "Intro - le village à l'aube", "vers": ["Coucou les amis, ouvrez grand les yeux,", "On s'envole au Mexique sous un soleil joyeux !", "Les portes sont peintes, tout le village s'éveille,", "Bulle et Pistache vous emmènent… ¡vámos !"]}, {"titre": "Intro 2 - Kiriko sort de chez lui", "vers": ["Voici le coq Kiriko, en habit lumineux,", "Plumes bien lustrées et petit nœud papillon,", "Son oncle se marie, c'est un très grand jour,", "Il part sur le chemin… vite, vite, en chanson !"]}, {"titre": "Refrain", "vers": ["Ki-ri-ki-ki, c'est le coq Kiriko !", "Ki-ri-ki-ki, le plus beau du Mexique !", "Plumes de feu et bec tout doré,", "Il court à la noce, vite, vite, vite !"]}, {"titre": "Couplet 1 - le champ de maïs", "vers": ["Dans le champ de maïs, tout doré, tout content,", "Kiriko a lustré chacune de ses plumes,", "Mais là, dans la poussière, brille un p'tit grain de blé...", "Il picore... MIAM ! Oh non, son bec est tout sale !"]}, {"titre": "Couplet 2 - les quatre refus, quatre lieux", "vers": ["Dans le champ : Herbe, herbe, nettoie mon bec ! — Non !", "Au pâturage : Mouton, mouton, mange cette herbe ! — Non !", "À la fontaine : Chien, chien, gronde le mouton ! — Non !", "Sous les guirlandes : Bâton, bâton, tape le chien ! — Non !"]}, {"titre": "Refrain", "vers": ["Ki-ri-ki-ki, c'est le coq Kiriko !", "Ki-ri-ki-ki, le plus beau du Mexique !", "Plumes de feu et bec tout doré,", "Il court à la noce, vite, vite, vite !"]}, {"titre": "Couplet 3 - découragé, au bord du chemin", "vers": ["Kiriko s'assoit, il a le cœur tout gris,", "Bulle pose sa patte, tout doux, sur son aile,", "Personne n'a voulu, personne n'a dit oui,", "Mais Pistache lui souffle : « Regarde donc le ciel ! »"]}, {"titre": "Grand air du soleil - ÇA MONTE, trompette", "vers": ["Alors Kiriko lève enfin la tête,", "Vers le grand soleil doré, tout en haut,", "Soleil, soleil, aide-moi s'il te plaît !", "Et le soleil, tout doucement, a dit... OUI !"]}, {"titre": "Pont - la cascade, ACCÉLÈRE", "vers": ["Le bâton dit oui ! Le chien dit oui !", "Le mouton dit oui ! Et l'herbe dit oui !", "Frotte, frotte, frotte le bec !", "Ki-ri-ki-ki, il est tout propre !"]}, {"titre": "Final - la noce du soir sous les lampions", "vers": ["Les lampions s'allument, la nuit est en couleurs,", "Kiriko arrive, la fête peut commencer !", "On danse sur la place, et le papel picado", "Fait des confettis plein le ciel étoilé !"]}, {"titre": "Refrain final", "vers": ["Ki-ri-ki-ki, c'est le coq Kiriko !", "Ki-ri-ki-ki, le plus beau du Mexique !", "Ki-ri-ki-ki ! Ki-ri-ki-ki !", "Vive le mariage au Mexique !"]}, {"titre": "Outro douce - les lampions montent", "vers": ["Kiriko a compris, et c'est une jolie leçon :", "Quand chacun aide un peu, tout se termine en chanson !", "Abonne-toi bien vite, Bulle et Pistache s'en vont,", "¡Hasta luego les amis !… à très bientôt, coucou !"]}], "illus": ["/img/f98010d5a10422.jpg", "/img/dbe4d899ea1039.jpg", "/img/a0c38119d62f7e.jpg", "/img/5ed4eb0bbc7c0b.jpg", "/img/24e57eb3e560ae.jpg", "/img/597d8f6a50d2d9.jpg", "/img/e2652e215cfb5e.jpg", "/img/334e3e1189ebc7.jpg", "/img/6d63a487208911.jpg", "/img/c01877c7951642.jpg", "/img/3fada001bd810e.jpg", "/img/d1073f69bd8b46.jpg"], "accroche": "Personne ne veut l’aider. Jusqu’à ce qu’il lève la tête.", "couverture": "/img/c01877c7951642.jpg", "explication": "L’herbe, le mouton, le chien et le bâton ont tous dit non. Puis le soleil a dit oui — et aussitôt, tous les autres ont dit oui aussi. Parfois il suffit d’une seule personne qui accepte pour que tout le monde suive.", "question": "Tu te souviens d’une fois où tu as aidé quelqu’un qui n’osait pas demander ?"}, "moufle": {"titre": "La Moufle", "pays": "Ukraine", "drapeau": "🇺🇦", "video": "4Ugk8kDblBs", "origine": "Conte traditionnel d’Ukraine", "morale": "Il y a toujours de la place pour un ami de plus… mais pas pour mille !", "prose": [{"titre": "Neige sur l’Ukraine", "texte": "Il était une fois, tout là-bas en Ukraine, un petit village aux maisons blanches et aux volets bleus. Cette nuit-là, il avait neigé, neigé, neigé. Au matin, la forêt était toute blanche, et les flocons dansaient encore dans le ciel rose."}, {"titre": "Le petit garçon et sa moufle", "texte": "Un petit garçon partit chercher du bois dans la forêt. Il portait un bonnet rouge à pompon et de jolies moufles rouges, brodées de motifs noirs et dorés par sa grand-mère. Il marchait entre les bouleaux, les bras chargés de bûches."}, {"titre": "Plouf !", "texte": "Mais en chemin — plouf ! — une de ses moufles tomba dans la neige, sans faire de bruit. Le petit garçon ne s’aperçut de rien et rentra chez lui. La moufle resta toute seule au milieu de la forêt. Qui allait la trouver ?"}, {"titre": "Toc toc toc !", "texte": "Une petite souris passait par là. Elle avait si froid aux pattes ! Elle vit la moufle et frappa à la porte : « Toc toc toc ! Qui habite dans la moufle ? » Personne ne répondit. Alors elle se glissa dedans. Qu’il faisait bon, là-dedans !"}, {"titre": "La souris et la grenouille", "texte": "Bientôt arriva une grenouille verte, en sautant sur l’étang gelé. « Croâ croâ ! Toc toc toc ! Qui habite dans la moufle ? — Moi, la petite souris. Et toi, qui es-tu ? — Je suis la grenouille. Une place pour moi ? — Entre vite ! » Et ça fit deux dans la moufle."}, {"titre": "Le lièvre et le renard", "texte": "Puis vint le lièvre, en faisant de grands bonds : « Hop hop ! J’ai froid aux oreilles ! — Entre vite, petit lièvre ! » Puis le renard tout roux, en se faufilant entre les sapins : « Moi aussi, j’ai froid au museau ! — Entre vite, le renard ! » Et ça fit quatre dans la moufle."}, {"titre": "Le loup et le sanglier", "texte": "Le soir tombait. Sur son rocher, sous la lune, le loup gris hurla : « Ahouuu ! Je grelotte, je grelotte ! — Entre vite, le loup ! » Puis le gros sanglier arriva en soulevant la neige : « Groin groin ! Poussez-vous un peu ! » La moufle gonfla, gonfla… et ça fit six dans la moufle."}, {"titre": "Boum, boum, boum", "texte": "Tout à coup, la terre se mit à trembler. Boum… boum… boum… Qui arrivait là ? C’était le gros ours brun ! « Grooar ! Moi aussi, j’ai froid ! Je peux entrer ? — Oh non, c’est bien trop petit ! » Mais l’ours avait l’air si gelé…"}, {"titre": "Ça fait sept !", "texte": "« Bon, d’accord… serrez-vous bien ! » Et l’ours entra, en poussant tout le monde. La moufle était pleine à craquer : sa tête dépassait par le haut, les coutures tiraient de partout. Ça faisait sept dans la moufle… et elle allait craquer !"}, {"titre": "La toute petite fourmi", "texte": "C’est alors qu’arriva, tout petit, tout petit, une fourmi. Elle demanda d’une toute petite voix : « Est-ce qu’il reste une place, une toute petite, pour moi ? » Et elle posa une patte sur la moufle. Juste une…"}, {"titre": "CRAAAC !", "texte": "CRAAAC ! La moufle éclata, et tout le monde s’envola dans la neige ! La souris, la grenouille et le lièvre roulèrent dans la neige folle, le renard, le loup et le sanglier glissèrent sur l’étang gelé, l’ours fit des roulades… Et la petite fourmi riait, riait de toutes ces glissades ! Sous l’aurore boréale, tous les amis firent une grande ronde pour se tenir chaud."}, {"titre": "Chut !", "texte": "Le lendemain matin, le petit garçon revint dans la forêt et retrouva sa moufle — toute grande, toute douce, au milieu des flocons. « Mais qui donc a dormi dans ma moufle ? » Derrière les arbres, tous les animaux se cachaient en souriant : chut ! Do pobatchennia, les amis — au revoir, en ukrainien !"}], "chanson": [{"titre": "Intro", "vers": ["Coucou les amis, mettez vos bonnets,", "Tout là-bas en Ukraine, il a neigé !", "Les flocons dansent, la forêt est toute blanche,", "Bulle et Pistache glissent… entre les branches !"]}, {"titre": "La moufle perdue", "vers": ["Un petit garçon part chercher du bois,", "Avec sa jolie moufle rouge et brodée,", "Mais plouf ! dans la neige, elle tombe, la voilà,", "Toute seule dans la forêt… qui va la trouver ?"]}, {"titre": "Refrain", "vers": ["Toc toc toc ! Qui habite dans la moufle ?", "Brrr, il fait froid ! On souffle, on souffle !", "Serrez-vous, serrez-vous, tout le monde au chaud,", "Dans la moufle, on est bien, on est bien comme il faut !"]}, {"titre": "La souris et la grenouille", "vers": ["Voici la petite souris : « Couic couic ! J’ai froid aux pattes ! »", "— Entre vite, petite souris !", "Voici la grenouille verte : « Croâ croâ ! Une place pour moi ? »", "— Entre vite, la grenouille !", "Couic couic, croâ croâ… ça fait deux dans la moufle !"]}, {"titre": "Le lièvre et le renard", "vers": ["Voici le lièvre qui saute : « Hop hop ! J’ai froid aux oreilles ! »", "— Entre vite, petit lièvre !", "Voici le renard tout roux : « Moi aussi, j’ai froid au museau ! »", "— Entre vite, le renard !", "Couic, croâ, hop hop, et le renard… ça fait quatre dans la moufle !"]}, {"titre": "Refrain", "vers": ["Toc toc toc ! Qui habite dans la moufle ?", "Brrr, il fait froid ! On souffle, on souffle !", "Serrez-vous, serrez-vous, tout le monde au chaud,", "Dans la moufle, on est bien, on est bien comme il faut !"]}, {"titre": "Le loup et le sanglier", "vers": ["Voici le loup tout gris : « Ahouuu ! Je grelotte, je grelotte ! »", "— Entre vite, le loup !", "Voici le gros sanglier : « Groin groin ! Poussez-vous un peu ! »", "— Entre vite, sanglier !", "La moufle gonfle, gonfle… ça fait six dans la moufle !"]}, {"titre": "Le gros ours", "vers": ["Boum… boum… boum… qui arrive là ?", "C’est le gros ours brun : « Grooar ! Moi aussi, j’ai froid ! »", "« Oh non, c’est bien trop petit ! » … « Bon, d’accord… serrez-vous bien ! »", "Ça fait sept dans la moufle… elle va craquer !"]}, {"titre": "La petite fourmi", "vers": ["Et tout petit, tout petit… voici la fourmi :", "« Est-ce qu’il reste une place, une toute petite, pour moi ? »", "Elle pose une patte… juste une…", "Et… CRAAAC !"]}, {"titre": "Refrain final", "vers": ["La moufle a éclaté, tout le monde s’envole !", "Souris, grenouille et lièvre roulent dans la neige folle,", "Renard, loup, sanglier, l’ours fait des roulades,", "Et la petite fourmi rit de toutes ces glissades !", "Toc toc toc ! Plus personne dans la moufle !", "Brrr, il fait froid… mais on rit, on souffle !", "Tous ensemble on danse pour se tenir au chaud,", "Sous la neige qui brille… c’est le plus beau !"]}, {"titre": "Le retour du garçon", "vers": ["Le petit garçon revient et trouve sa moufle,", "Toute grande, toute douce, au milieu des flocons.", "Il sourit : « Mais qui donc a dormi dans ma moufle ? »", "Et dans la forêt, chut… tout le monde fait « Chut ! »."]}, {"titre": "Au revoir", "vers": ["Le voyage s’achève sous les flocons tout doux,", "Abonne-toi bien vite, on pense fort à vous !", "Bulle et Pistache t’envoient des bisous tout chauds,", "Do pobatchennia les amis… à bientôt !"]}], "illus": ["/img/5023b81bb8af3f.jpg", "/img/234b8fb2fe1541.jpg", "/img/531ca5045dcb9e.jpg", "/img/1442e791943a6f.jpg", "/img/ac445e62f7dcf8.jpg", "/img/1514fedde027a7.jpg", "/img/af589bd09fcb2b.jpg", "/img/ed9c7de12f9fbf.jpg", "/img/392af9c19c5b69.jpg", "/img/f8335a0b55b4bd.jpg", "/img/140968b5738428.jpg", "/img/ce4f39c918b867.jpg"], "accroche": "Toc toc toc ! Qui habite dans la moufle ? Sept animaux… et une toute petite fourmi.", "couverture": "/img/202f8a1453556e.jpg", "explication": "Dans la moufle, chacun s’est serré pour faire une place à celui qui avait froid : c’est ça, être accueillant. Mais quand on pousse, pousse, pousse, ça finit par craquer. Être gentil, ce n’est pas dire oui à tout : c’est savoir partager, et savoir aussi quand c’est assez.", "question": "Et toi, à qui ferais-tu une place sous ta couverture quand il fait froid ?"}, "breme": {"titre": "Les Musiciens de Brême", "pays": "Allemagne", "drapeau": "🇩🇪", "video": "VQPpux1qeiI", "origine": "Conte des frères Grimm (Allemagne)", "morale": "Seul, on est petit… ensemble, on est géants !", "prose": [{"titre": "Bienvenue en Allemagne", "texte": "Il était une fois, tout là-bas en Allemagne, un joli village aux maisons à colombages, avec des poutres en bois et des géraniums rouges aux fenêtres. Au loin, on voyait les montagnes, les forêts… et un château de conte de fées. Ce matin-là, Bulle avait son tambour et Pistache sa trompette : c’était jour de fête !"}, {"titre": "Le vieil âne gris", "texte": "Au moulin vivait un vieil âne gris. Toute sa vie, il avait porté les sacs de farine. Mais un jour, les sacs devinrent trop lourds pour lui… et BOUM ! ils tombèrent par terre. « Tu es trop vieux maintenant », lui dit le meunier."}, {"titre": "« Tant pis, je fais mon sac ! »", "texte": "L’âne secoua ses grandes oreilles. « Tant pis ! Je fais mon sac. J’irai à Brême, la grande ville, et là-bas je serai musicien ! » Et il s’imagina déjà jouant de la guitare devant tout le monde."}, {"titre": "En route pour Brême", "texte": "Hi-han, hi-han ! L’âne prit le chemin, son petit baluchon sur le dos. Il passait entre les champs de fleurs et les pommiers, et il chantait de tout son cœur : « En route, en route, en route pour Brême ! »"}, {"titre": "Le vieux chien fatigué", "texte": "Au bord du chemin, sous un pommier, un vieux chien était couché. Il soupirait : « Pfff… je ne cours plus très vite, je suis tout chagriné. Personne ne veut plus de moi. »"}, {"titre": "Ça fait deux amis !", "texte": "« Viens avec moi, lui dit l’âne. Tu feras la batterie ! » Le chien se releva d’un bond, la queue qui frétillait. Hi-han, ouaf ouaf ! Ils repartirent tous les deux : ça faisait deux amis !"}, {"titre": "Le chat tout triste", "texte": "Sur un petit mur, un chat gris tout triste miaulait. Il n’attrapait plus les souris : une petite souris venait même de lui filer sous le nez ! « Viens avec nous, tu chantes si bien ! » Miaou ! Ça faisait trois copains."}, {"titre": "Le coq qui chante à tue-tête", "texte": "Le soleil se couchait quand ils virent, sur une barrière, un coq qui chantait à tue-tête : « COCORICO ! Moi aussi, je veux faire la fête ! » — « Viens avec nous, ta voix est la plus belle ! » Hi-han, ouaf ouaf, miaou, cocorico… ça faisait quatre musiciens !"}, {"titre": "La forêt toute noire", "texte": "Mais Brême était loin, et la nuit tomba. Chut… dans la grande forêt, il faisait tout noir. « Hou hou ! » fit la chouette. Les quatre amis n’étaient pas très rassurés… Alors le coq grimpa tout en haut d’un sapin, et là-bas, il vit une petite lumière qui brillait."}, {"titre": "La maison des voleurs", "texte": "C’était une maison, au milieu des arbres. Par la fenêtre, les amis virent une grande table pleine de bretzels, de saucisses et de gâteaux… et trois voleurs qui mangeaient en riant. « Si seulement nous pouvions entrer… »"}, {"titre": "Un monstre à quatre têtes !", "texte": "L’âne se mit en bas, le chien grimpa sur son dos, le chat sur le chien, et le coq tout en haut. Un, deux, trois… HI-HAN ! OUAF OUAF ! MIAOU ! COCORICO ! Sur le mur, les voleurs virent une ombre géante. « Au secours, un monstre à quatre têtes ! » Et ils s’enfuirent si loin, si loin, qu’ils ne revinrent jamais."}, {"titre": "Ensemble, on est géants", "texte": "La maison était à eux, toute chaude, avec un bon feu qui crépitait. Les quatre amis n’allèrent jamais jusqu’à Brême : ils restèrent là, et chaque soir, ils jouaient leur musique sous les étoiles. Seul, on est petit… ensemble, on est géants ! Auf Wiedersehen, les amis — au revoir, en allemand !"}], "chanson": [{"titre": "Intro", "vers": ["Coucou les amis, en route pour l’Allemagne !", "Des maisons à colombages, des forêts, des montagnes…", "Bulle a son tambour, Pistache sa trompette,", "Tous à Brême, c’est la fête !"]}, {"titre": "L’âne", "vers": ["Un vieil âne gris ne peut plus porter les sacs,", "Il secoue ses oreilles : « Tant pis, je fais mon sac !", "À Brême, je serai musicien ! »", "Hi-han, hi-han, il prend le chemin !"]}, {"titre": "Refrain", "vers": ["En route, en route, en route pour Brême,", "Tous ensemble on chante, c’est ça qu’on aime !", "Hi-han ! … et la musique est là,", "Les musiciens arrivent, les voilà !"]}, {"titre": "Le chien", "vers": ["Au bord du chemin, un vieux chien fatigué,", "Il ne court plus très vite, il est tout chagriné.", "« Viens avec moi, tu feras la batterie ! »", "Hi-han, ouaf ouaf ! Ça fait deux amis !"]}, {"titre": "Le chat", "vers": ["Sur un petit mur, un chat tout triste miaule,", "Il n’attrape plus les souris, ce n’est pas drôle.", "« Viens avec nous, tu chantes si bien ! »", "Hi-han, ouaf ouaf, miaou ! Ça fait trois copains !"]}, {"titre": "Le coq", "vers": ["Sur une barrière, le coq crie à tue-tête,", "« Cocorico ! Moi aussi, je veux faire la fête ! »", "« Viens avec nous, ta voix est la plus belle ! »", "Hi-han, ouaf ouaf, miaou, cocorico ! Ça fait quatre, pêle-mêle !"]}, {"titre": "Refrain", "vers": ["En route, en route, en route pour Brême,", "Tous ensemble on chante, c’est ça qu’on aime !", "Hi-han ! Ouaf ouaf ! Miaou ! Cocorico !", "Les musiciens arrivent, rigolos !"]}, {"titre": "La forêt", "vers": ["Chut… il fait tout noir dans la grande forêt,", "Hou hou, fait la chouette, on n’est pas très rassurés…", "Mais là-bas, une petite lumière qui brille :", "Une maison, et des voleurs qui font ripaille !"]}, {"titre": "La pyramide", "vers": ["L’âne en bas, le chien grimpe sur son dos,", "Le chat sur le chien, et le coq tout en haut !", "Un, deux, trois… tous ensemble, on y va :", "HI-HAN ! OUAF OUAF ! MIAOU ! COCORICO !"]}, {"titre": "Les voleurs", "vers": ["« Au secours, un monstre à quatre têtes ! »", "Les voleurs s’enfuient en courant, sans faire la fête,", "Si loin, si loin… ils ne reviendront plus,", "Et la maison est à nos amis, tout chaud, tout cossu !"]}, {"titre": "Refrain final", "vers": ["On n’est pas allés jusqu’à Brême,", "Mais tous ensemble, c’est ça qu’on aime !", "Seul, on est petit, ensemble on est géants,", "Une chanson à quatre, c’est épatant !", "Hi-han ! Ouaf ouaf ! Miaou ! Cocorico !", "Les musiciens de Brême, bravo, bravo !"]}, {"titre": "Au revoir", "vers": ["Le voyage s’achève, la maison chante encore,", "Abonne-toi bien vite, on t’aime très fort !", "Bulle et Pistache t’envoient un gros bisou :", "Auf Wiedersehen les amis… à bientôt, coucou !"]}], "illus": ["/img/e556f35f5a8dcc.jpg", "/img/e3550531118d72.jpg", "/img/c7ca088f47d6dd.jpg", "/img/b215cca2378703.jpg", "/img/2c474c48513e2a.jpg", "/img/901e174dfd5f36.jpg", "/img/6bb4e0efc09825.jpg", "/img/e646a4f439d2f1.jpg", "/img/da0cf3e831057a.jpg", "/img/602de1a6d1153f.jpg", "/img/15ab9150b8f7f2.jpg", "/img/5897b433084f0f.jpg"], "accroche": "Un âne, un chien, un chat et un coq partent à Brême pour devenir musiciens… Hi-han ! Ouaf ! Miaou ! Cocorico !", "couverture": "/img/d2ab7b1afc81d0.jpg", "explication": "Chacun des quatre amis se croyait trop vieux, trop fatigué ou plus bon à rien. Mais en chantant ensemble, en montant les uns sur les autres, ils ont fait la plus grande musique du monde ! Chacun a sa voix, et c’est ensemble qu’on devient fort.", "question": "Et toi, avec qui aimerais-tu monter un petit orchestre ? Et quel instrument choisirais-tu ?"}};
+let courant = 'navet', page = -1, mode = 'prose';   // -1 = la couverture
+
+const choix = document.getElementById('choix');
+Object.entries(LIVRES).forEach(([cle, l]) => {
+  const b = document.createElement('button');
+  b.type = 'button'; b.dataset.cle = cle;
+  b.innerHTML = '<span>' + l.drapeau + '</span>' + l.titre;
+  b.addEventListener('click', () => { courant = cle; page = -1; dessiner(); });
+  choix.appendChild(b);
+});
+function setMode(m) { mode = m; page = 0; dessiner(); }
+document.getElementById('couvOuvrir').addEventListener('click', () => { page = 0; dessiner(); });
+document.getElementById('modeProse').addEventListener('click', () => setMode('prose'));
+document.getElementById('modeChanson').addEventListener('click', () => setMode('chanson'));
+
+function dessiner() {
+  const l = LIVRES[courant];
+  // certains contes n'ont pas de fichier de paroles dans le projet :
+  // on masque l'onglet plutot que d'afficher une page vide
+  const aChanson = l.chanson && l.chanson.length > 0;
+  document.getElementById('modeChanson').hidden = !aChanson;
+  document.querySelector('.bascule').hidden = !aChanson;
+  if (!aChanson) mode = 'prose';
+  const suite = mode === 'prose' ? l.prose : l.chanson;
+  const n = suite.length;
+  page = Math.max(-1, Math.min(page, n - 1));
+
+  // la couverture occupe la page -1 : on bascule l'affichage
+  const surCouv = page === -1;
+  document.getElementById('couverture').hidden = !surCouv;
+  document.getElementById('pages').hidden = surCouv;
+  if (surCouv) {
+    document.getElementById('couvFond').src = l.couverture;
+    document.getElementById('couvFond').alt = l.titre;
+    document.getElementById('couvDr').textContent = l.drapeau;
+    document.getElementById('couvPays').textContent = l.pays;
+    document.getElementById('couvTitre').textContent = l.titre;
+    document.getElementById('couvAccroche').textContent = l.accroche;
+    document.getElementById('couvOrigine').textContent = l.origine;
+  }
+
+  document.querySelectorAll('#choix button').forEach(b =>
+    b.setAttribute('aria-pressed', b.dataset.cle === courant ? 'true' : 'false'));
+  document.getElementById('modeProse').setAttribute('aria-pressed', mode === 'prose');
+  document.getElementById('modeChanson').setAttribute('aria-pressed', mode === 'chanson');
+  document.getElementById('origine').textContent = l.origine;
+
+  if (!surCouv) {
+  // une image par page : elle change quand on tourne la page
+  const illu = document.getElementById('illu');
+  const src = l.illus[Math.min(page, l.illus.length - 1)];
+  if (illu.src !== src) {
+    illu.classList.add('change');
+    setTimeout(() => { illu.src = src; illu.classList.remove('change'); }, 160);
+  }
+  illu.alt = l.titre + ' — ' + (suite[page].titre || '');
+
+  const p = suite[page];
+  let corps;
+  if (mode === 'prose') {
+    corps = '<p class="prose' + (page === 0 ? ' lettrine' : '') + '">' + p.texte + '</p>';
+  } else {
+    corps = '<div class="vers' + (page === 0 ? ' lettrine' : '') + '">' +
+            p.vers.map(v => '<span>' + v + '</span>').join('') + '</div>';
+  }
+  document.getElementById('texte').innerHTML =
+    '<p class="section-titre">' + (p.titre || '') + '</p>' + corps +
+    (page === n - 1 && mode === 'prose'
+      ? '<div class="morale"><p class="morale-phrase">' + l.morale + '</p>' +
+        (l.explication ? '<p class="morale-expl">' + l.explication + '</p>' : '') +
+        (l.question ? '<p class="morale-q">' + l.question + '</p>' : '') + '</div>'
+      : (page === n - 1 ? '<p class="morale"><span class="morale-phrase">' + l.morale + '</span></p>' : ''));
+  }
+
+  document.getElementById('compte').textContent = surCouv ? 'Couverture'
+    : (mode === 'prose' ? 'Le conte' : 'La chanson') + ' — page ' + (page + 1) + ' sur ' + n;
+  document.getElementById('prec').disabled = surCouv;
+  document.getElementById('suiv').disabled = page === n - 1;
+  const lien = document.getElementById('versVideo');
+  if (l.video) {
+    lien.href = 'https://www.youtube.com/watch?v=' + l.video;
+    lien.textContent = '▶ Voir l’épisode en vidéo';
+    lien.removeAttribute('aria-disabled'); lien.style.opacity = '';
+    lien.style.pointerEvents = '';
+  } else {
+    lien.removeAttribute('href');
+    lien.textContent = 'Bientôt en vidéo sur la chaîne';
+    lien.setAttribute('aria-disabled', 'true');
+    lien.style.opacity = '.55'; lien.style.pointerEvents = 'none';
+  }
+}
+document.getElementById('prec').addEventListener('click', () => { page--; dessiner(); });
+document.getElementById('suiv').addEventListener('click', () => { page++; dessiner(); });
+document.addEventListener('keydown', e => {
+  if (e.target.closest('input, textarea')) return;
+  if (e.key === 'ArrowLeft') { page--; dessiner(); }
+  if (e.key === 'ArrowRight') { page++; dessiner(); }
+});
+dessiner();
+
+// ── la carte : un pays, ses contes ──
+const PAYS = {"mexique": {"nom": "Mexique", "drapeau": "🇲🇽", "contes": ["kiriko"]}, "angleterre": {"nom": "Angleterre", "drapeau": "🇬🇧", "contes": ["boucle", "cochons"]}, "france": {"nom": "France", "drapeau": "🇫🇷", "contes": ["chaperon"]}, "russie": {"nom": "Russie", "drapeau": "🇷🇺", "contes": ["navet"]}, "orient": {"nom": "Orient", "drapeau": "🪔", "contes": ["aladin"]}, "afrique": {"nom": "Afrique", "drapeau": "🌍", "contes": ["lion"]}, "japon": {"nom": "Japon", "drapeau": "🇯🇵", "contes": ["momotaro"]}, "ukraine": {"nom": "Ukraine", "drapeau": "🇺🇦", "contes": ["moufle"]}, "allemagne": {"nom": "Allemagne", "drapeau": "🇩🇪", "contes": ["breme"]}};
+const panneau = document.getElementById('cartePanneau');
+function montrerPays(cle) {
+  const p = PAYS[cle];
+  document.querySelectorAll('.mappemonde .etape').forEach(g =>
+    g.setAttribute('aria-current', g.dataset.pays === cle ? 'true' : 'false'));
+  const lignes = p.contes.map(c => {
+    const l = LIVRES[c];
+    if (!l) return '';
+    const dest = l.video ? 'https://www.youtube.com/watch?v=' + l.video : '#livre';
+    return '<a class="carte-conte" href="' + dest + '"' +
+      (l.video ? ' target="_blank" rel="noopener"' : '') + '>' +
+      '<img src="' + l.couverture + '" alt="">' +
+      '<span class="carte-conte-txt"><strong>' + l.titre + '</strong>' +
+      '<span>' + (l.video ? 'Voir l’épisode' : 'Bientôt en vidéo') + '</span></span></a>';
+  }).join('');
+  panneau.innerHTML = '<p class="carte-pays"><span class="dr">' + p.drapeau + '</span>' +
+    p.nom + '</p>' + lignes;
+}
+document.querySelectorAll('.mappemonde .etape').forEach(g => {
+  g.addEventListener('click', () => montrerPays(g.dataset.pays));
+  g.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); montrerPays(g.dataset.pays); }
+  });
+});
+montrerPays('mexique');
+</script>
+
+
+<script>/* polish Hallmark : drapeaux de secours pour Windows */
+(function(){
+  if(!/Windows/.test(navigator.userAgent))return;
+  var D={
+   '🇷🇺':'<rect width="3" height="2" fill="#fff"/><rect y=".667" width="3" height=".667" fill="#0039a6"/><rect y="1.333" width="3" height=".667" fill="#d52b1e"/>',
+   '🇫🇷':'<rect width="1" height="2" fill="#0055a4"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ef4135"/>',
+   '🇩🇪':'<rect width="3" height=".667" fill="#000"/><rect y=".667" width="3" height=".667" fill="#dd0000"/><rect y="1.333" width="3" height=".667" fill="#ffce00"/>',
+   '🇺🇦':'<rect width="3" height="1" fill="#0057b7"/><rect y="1" width="3" height="1" fill="#ffd700"/>',
+   '🇯🇵':'<rect width="3" height="2" fill="#fff"/><circle cx="1.5" cy="1" r=".6" fill="#bc002d"/>',
+   '🇲🇽':'<rect width="1" height="2" fill="#006847"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ce1126"/><circle cx="1.5" cy="1" r=".25" fill="#8c5a2b"/>',
+   '🇬🇧':'<rect width="3" height="2" fill="#012169"/><path d="M0 0L3 2M3 0L0 2" stroke="#fff" stroke-width=".4"/><path d="M0 0L3 2M3 0L0 2" stroke="#c8102e" stroke-width=".15"/><path d="M1.5 0V2M0 1H3" stroke="#fff" stroke-width=".6"/><path d="M1.5 0V2M0 1H3" stroke="#c8102e" stroke-width=".35"/>'
+  };
+  var re=new RegExp(Object.keys(D).join('|'),'g');
+  function svg(k){return '<svg class="drap" viewBox="0 0 3 2" preserveAspectRatio="none" role="img" aria-hidden="true">'+D[k]+'</svg>'}
+  function passe(racine){
+    var w=document.createTreeWalker(racine,NodeFilter.SHOW_TEXT),n,l=[];
+    while(n=w.nextNode())if(re.test(n.nodeValue))l.push(n);
+    l.forEach(function(t){re.lastIndex=0;var sp=document.createElement('span');
+      sp.innerHTML=t.nodeValue.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]}).replace(re,svg);
+      t.parentNode.replaceChild(sp,t)});
+    re.lastIndex=0;
+  }
+  function go(){passe(document.body);new MutationObserver(function(m){m.forEach(function(r){
+    r.addedNodes.forEach(function(x){if(x.nodeType===1)passe(x);else if(x.nodeType===3&&x.parentNode)passe(x.parentNode)})})})
+    .observe(document.body,{childList:true,subtree:true})}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+})();
+</script>
+</body>
+</html>
