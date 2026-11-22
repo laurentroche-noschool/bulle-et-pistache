@@ -428,6 +428,9 @@ footer .fin{width:100%;border-top:1px solid var(--ligne);padding-top:18px;margin
   pointer-events:none}
 .cahier-note{font-family:var(--f-titre);font-size:12.5px;color:var(--encre-doux);text-align:center}
 .cahiers-bas{margin:clamp(18px,2.6vw,26px) 0 0;font-size:14px;color:var(--encre-doux)}
+.album .cahier-couv img{aspect-ratio:1/1;width:min(82%,260px);border-radius:4px 8px 8px 4px}
+.album .cahier-pages img{aspect-ratio:1/1}
+.cahier-acheter .bouton.vide{justify-content:center}
 .appr{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:clamp(16px,2.4vw,26px)}
 .appr-carte{background:var(--papier2);border:1px solid var(--ligne);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
 .appr-carte img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
@@ -515,6 +518,7 @@ nav.menu a:active{background:color-mix(in srgb,var(--prune) 20%,transparent)}
     <a href="#apprendre">À apprendre</a>
     <a href="#livre">À lire</a>
     <a href="#cahiers">À colorier</a>
+    <a href="#albums">Albums</a>
     <a href="#eux">L’histoire</a>
     <a href="#personnages">Les personnages</a>
     <a href="#morales">Les morales</a>
@@ -1041,6 +1045,60 @@ nav.menu a:active{background:color-mix(in srgb,var(--prune) 20%,transparent)}
      pour un anniversaire, le calendrier de l’Avent ou à glisser sous le sapin.</p>
 </div></section>
 
+<section id="albums"><div class="enveloppe">
+  <div class="chapeau">
+    <h2>Les albums illustrés</h2>
+    <p>Le conte du dessin animé, en grand livre à lire le soir. Bulle et Pistache accompagnent l’histoire
+       de page en page, et l’enfant retrouve les phrases qu’il chante dans l’épisode.</p>
+  </div>
+  <ul class="cahiers-atouts">
+    <li>📖 10 grandes doubles pages en couleur</li>
+    <li>🗣️ Des phrases à dire ensemble</li>
+    <li>💬 La morale du conte et une question pour en parler</li>
+    <li>🔍 Un « cherche et trouve » et deux pages à dessiner</li>
+    <li>📱 Un code QR vers le dessin animé</li>
+    <li>📐 Format carré 21,6 × 21,6 cm · 32 pages</li>
+  </ul>
+  <div class="cahiers">
+      <article class="cahier album" data-album="1" data-etat="dispo">
+        <div class="cahier-couv"><img src="/img/2a7e6f3f779193.jpg" alt="Couverture de l’album Bulle &amp; Pistache : Le Gros Navet" loading="lazy">
+          <span class="cahier-prix">10,54 €</span></div>
+        <div class="cahier-txt">
+          <span class="cahier-tome">Album n°1 · Conte de Russie</span>
+          <h3>Le Gros Navet</h3>
+          <p>Grand-père plante un navet… qui devient géant ! Pour le tirer de terre, toute la famille s’y met, jusqu’à la petite souris.</p>
+          <div class="cahier-pages"><img src="/img/49d795aab4a378.jpg" alt="" loading="lazy"><img src="/img/f827d7d1d413fa.jpg" alt="" loading="lazy"><img src="/img/67f4f9efa0b090.jpg" alt="" loading="lazy"><img src="/img/e3ab6e869db34d.jpg" alt="" loading="lazy"></div>
+          <div class="cahier-acheter"><a class="bouton plein" href="https://www.amazon.fr/dp/B0HRDJ1H83" target="_blank" rel="noopener">Acheter sur Amazon</a><a class="bouton vide" href="/ecoute/le-gros-navet/">🎧 Écouter l’histoire</a><span class="cahier-note">Disponible · livré par Amazon</span></div>
+        </div>
+      </article>
+      <article class="cahier album" data-album="2" data-etat="bientot">
+        <div class="cahier-couv"><img src="/img/98b2aa51851cde.jpg" alt="Couverture de l’album Bulle &amp; Pistache : Le Petit Chaperon Rouge" loading="lazy">
+          <span class="cahier-prix">10,54 €</span></div>
+        <div class="cahier-txt">
+          <span class="cahier-tome">Album n°2 · Conte de France</span>
+          <h3>Le Petit Chaperon Rouge</h3>
+          <p>Promenons-nous dans les bois… Le grand classique de Perrault, avec un loup qui fait sourire plutôt que peur.</p>
+          <div class="cahier-pages"><img src="/img/e16a56a336afbb.jpg" alt="" loading="lazy"><img src="/img/059ed939cfec9a.jpg" alt="" loading="lazy"><img src="/img/37ea30d398015a.jpg" alt="" loading="lazy"><img src="/img/ce3cdea6e23166.jpg" alt="" loading="lazy"></div>
+          <div class="cahier-acheter"><a class="bouton plein" aria-disabled="true">Bientôt sur Amazon</a><span class="cahier-note">En cours de validation par Amazon</span></div>
+        </div>
+      </article>
+      <article class="cahier album" data-album="3" data-etat="bientot">
+        <div class="cahier-couv"><img src="/img/c1fd8d77bc6e2b.jpg" alt="Couverture de l’album Bulle &amp; Pistache : Boucle d’Or et les 3 Ours" loading="lazy">
+          <span class="cahier-prix">10,54 €</span></div>
+        <div class="cahier-txt">
+          <span class="cahier-tome">Album n°3 · Conte d’Angleterre</span>
+          <h3>Boucle d’Or et les 3 Ours</h3>
+          <p>Trop chaud, trop froid… et parfois, juste bien ! Ici, Boucle d’Or demande pardon et repart avec un nouvel ami.</p>
+          <div class="cahier-pages"><img src="/img/f87dc34a4203ac.jpg" alt="" loading="lazy"><img src="/img/f5499feb0de793.jpg" alt="" loading="lazy"><img src="/img/954551a43b2612.jpg" alt="" loading="lazy"><img src="/img/e092e47cc83416.jpg" alt="" loading="lazy"></div>
+          <div class="cahier-acheter"><a class="bouton plein" aria-disabled="true">Bientôt sur Amazon</a><span class="cahier-note">Arrive dans quelques jours</span></div>
+        </div>
+      </article>
+  </div>
+  <p class="cahiers-bas">Livres brochés imprimés en couleur et livrés par Amazon, 10,54 € chacun.
+     Les autres contes de la chaîne arrivent au fil des semaines.</p>
+</div></section>
+
+
 <section id="eux"><div class="enveloppe">
   <div class="chapeau">
     <h2>Faire le tour du monde avant d’avoir cinq ans</h2>
@@ -1258,6 +1316,7 @@ nav.menu a:active{background:color-mix(in srgb,var(--prune) 20%,transparent)}
   </div>
   <div class="bloc"><h4>Colorier</h4>
     <a href="#cahiers">Les cahiers de coloriage</a>
+    <a href="#albums">Les albums illustrés</a>
   </div>
   <div class="bloc"><h4>Écrire</h4>
     <p style="margin:0;font-size:15px;color:var(--encre-doux)">
